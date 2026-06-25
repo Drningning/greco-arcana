@@ -1,0 +1,24 @@
+GRECO ARCANA — UPDATE 3 (Practitioner Honors, Service Links, Local SEO)
+===================================================================
+Deploy from GitHub (same as before): repo -> Add file -> Upload files ->
+drag in the contents of this folder -> Commit changes. Netlify rebuilds
+automatically in about a minute. Nothing can be wiped; old versions stay
+in your GitHub history.
+
+WHAT'S NEW IN THIS PACKAGE
+  • Initiatory Honors now appear prominently at the TOP of the Practitioner
+    section as a centered banner (32 deg Scottish Rite, Knight of the Rose
+    Croix, Royal Arch, The Silver Temple, Golden Section). The full degree
+    record remains in the expandable panel below.
+  • The Fellowship of the Hermetic Rose grades were replaced with
+    The Silver Temple:  0 deg Seeker, 1 deg Miles, 3 deg Adeptus, 4 deg Epoptes.
+  • "Learn more" buttons added across the homepage Offerings and Pricing
+    cards, each linking to that service's page (where the FAQ lives).
+  • A plain-language H2 added high on the homepage for search engines.
+  • Instagram added to the homepage structured data.
+  • "Nearby Areas Served" internal links added to all 8 town pages.
+
+HELD FOR A LATER ROUND (just so you know what's NOT in here)
+  • A short FAQ on each town page (deepens them for local search).
+  • A standalone /about/ page for Joseph Greco.
+  Say the word and I'll build those next.

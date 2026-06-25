@@ -67,7 +67,8 @@
       ],
       "founder": { "@id": "https://grecoarcana.com/#joseph-greco" },
       "sameAs": [
-        "https://www.youtube.com/@GrecoArcana"
+        "https://www.youtube.com/@GrecoArcana",
+        "https://www.instagram.com/grecoarcana/"
       ]
     },
     {
@@ -113,6 +114,14 @@
 
 <!-- STYLES -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<style>
+  .svc-more{display:inline-block;margin-top:1.25rem;font-family:var(--serif-display);font-size:0.72rem;
+    letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(201,169,110,0.4);
+    padding-bottom:0.2rem;transition:color .3s,border-color .3s;}
+  .svc-more:hover{color:var(--gold-bright);border-color:var(--gold);}
+  .card-actions{display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap;align-items:center;margin-top:0.25rem;}
+  .card-actions .btn{margin:0;}
+</style>
 </head>
 
 <body>
@@ -192,6 +201,8 @@
       <strong>Hermetic tarot readings, ceremonial magic, and spiritual alchemy</strong> by Joseph Greco — 32° Mason and initiate of the Western Mystery Tradition. A practice for the thoughtful. Integrated readings and ceremonial work for professionals at the crossroads, esotericists in pursuit of mentorship, and those who require <em>clarity</em>—not entertainment.
     </p>
 
+    <h2 style="font-family:var(--serif-display);font-size:clamp(0.95rem,2.1vw,1.18rem);font-weight:500;letter-spacing:0.04em;color:var(--gold);margin:1.9rem auto 0;max-width:760px;line-height:1.55;">Hermetic Tarot Readings, Ceremonial Magic &amp; Spiritual Alchemy in New Jersey &amp; Online</h2>
+
     <div class="hero-cta-group">
       <a href="#pricing" class="btn btn-primary">
         Book a Reading
@@ -210,6 +221,23 @@
 <!-- ============ ABOUT ============ -->
 <section class="about" id="about">
   <div class="container">
+
+    <div class="honors-banner reveal" style="text-align:center;max-width:920px;margin:0 auto 4.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(201,169,110,0.2);">
+      <span class="eyebrow" style="display:block;margin-bottom:1.4rem;">Initiatory Honors</span>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.6rem 1.4rem;font-family:var(--serif-display);font-size:0.96rem;letter-spacing:0.06em;color:var(--vellum);line-height:1.5;">
+        <span>32&deg; Scottish Rite Freemason</span>
+        <span style="color:var(--gold);">&#10022;</span>
+        <span>Knight of the Rose Croix</span>
+        <span style="color:var(--gold);">&#10022;</span>
+        <span>Holy Royal Arch Mason</span>
+        <span style="color:var(--gold);">&#10022;</span>
+        <span>Initiate of The Silver Temple</span>
+        <span style="color:var(--gold);">&#10022;</span>
+        <span>Fellow of the Golden Section</span>
+      </div>
+      <p style="font-family:var(--serif-body);font-style:italic;color:var(--vellum-aged);font-size:1.05rem;margin-top:1.5rem;">A practitioner whose authority is earned in the lodge and the temple, not asserted in a byline. The full initiatic record is set out below.</p>
+    </div>
+
     <div class="about-grid">
       <div class="reveal">
         <div class="portrait-frame">
@@ -316,11 +344,12 @@
               </ul>
             </div>
             <div class="honor-group">
-              <h4>Fellowship of the Hermetic Rose</h4>
+              <h4>The Silver Temple</h4>
               <ul>
-                <li><span class="deg">0°</span>Candidate</li>
-                <li><span class="deg">1°</span>Seeker</li>
-                <li><span class="deg">2°</span>Sojourner</li>
+                <li><span class="deg">0°</span>Seeker</li>
+                <li><span class="deg">1°</span>Miles</li>
+                <li><span class="deg">3°</span>Adeptus</li>
+                <li><span class="deg">4°</span>Epoptes</li>
               </ul>
             </div>
           </div>
@@ -364,6 +393,7 @@
         <p>
           Multiple spreads, customized to the question you actually need answered. Drawn from the Western Mystery tradition rather than New Age generality. Whether you arrive with one situation or a full life-survey, you leave with structure.
         </p>
+              <a href="/services/hermetic-tarot-reading/" class="svc-more">Learn more &rarr;</a>
       </div>
 
       <!-- Service 2 -->
@@ -380,6 +410,7 @@
         <p>
           The flagship offering: tarot integrated with natal astrology, personal numerology, gematria, and herbal alchemy in a 90-minute working. For those serious enough to want the entire diagnostic apparatus brought to bear at once.
         </p>
+              <a href="/services/hermetic-praxis-reading/" class="svc-more">Learn more &rarr;</a>
       </div>
 
       <!-- Service 3 -->
@@ -397,6 +428,7 @@
         <p>
           Bespoke alchemical objects, wrought to address what the reading uncovered. Each is consecrated by ceremony at planetary hour, with the herbal and metallic correspondences proper to your specific working. Not jewelry. Instruments.
         </p>
+              <a href="/services/talismans-and-amulets/" class="svc-more">Learn more &rarr;</a>
       </div>
 
       <!-- Service 4 -->
@@ -413,6 +445,7 @@
         <p>
           Banishing rituals to clear what does not serve. Consecrations of new tarot decks, shewstones, and ritual implements. House work for those who feel the territory is unsettled. The work is performed properly, not theatrically.
         </p>
+              <a href="/services/ceremonial-magic/" class="svc-more">Learn more &rarr;</a>
       </div>
     </div>
   </div>
@@ -464,7 +497,7 @@
           Yes-or-no questions. Decision alignment. For those who already know the territory and need a single clear signal.
         </p>
         <span class="note">Reserved for current Greco Arcana clients.</span>
-        <a href="#contact" class="btn btn-ghost">Inquire</a>
+        <div class="card-actions"><a href="/services/hermetic-tarot-reading/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Inquire</a></div>
       </div>
 
       <div class="price-card">
@@ -479,7 +512,7 @@
         <p class="description">
           A focused working for career and work questions, family matters, and romantic relationship examinations. We approach your situation from the perspectives of fire, water, air, and earth, and we see where each element leads your journey.
         </p>
-        <a href="#contact" class="btn btn-ghost">Book</a>
+        <div class="card-actions"><a href="/services/hermetic-tarot-reading/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Book</a></div>
       </div>
 
       <div class="price-card">
@@ -495,7 +528,7 @@
         <p class="description">
           The full spectrum of the tarot, turned upon yourself. Where the Clear Sign and the Resolution are chosen by design, here we see what lies underneath the material you, and we go wherever that takes us.
         </p>
-        <a href="#contact" class="btn btn-ghost">Book</a>
+        <div class="card-actions"><a href="/services/hermetic-tarot-reading/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Book</a></div>
       </div>
 
       <div class="price-card featured">
@@ -511,7 +544,7 @@
         <p class="description">
           Tarot, astrology, ceremonial magic, numerology, gematria, and herbal alchemy—integrated. Multiple spreads, full natal chart, and personal numerology alignment.
         </p>
-        <a href="#contact" class="btn btn-primary">Reserve</a>
+        <div class="card-actions"><a href="/services/hermetic-praxis-reading/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-primary">Reserve</a></div>
       </div>
     </div>
 
@@ -533,7 +566,7 @@
           <p class="description">
             Proper consecration of a scrying stone—your instrument is awakened to the work it was made for.
           </p>
-          <a href="#contact" class="btn btn-ghost">Inquire</a>
+          <div class="card-actions"><a href="/services/shewstone-consecration/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Inquire</a></div>
         </div>
 
         <div class="price-card">
@@ -547,7 +580,7 @@
           <p class="description">
             For homes, offices, real estate transactions, or new spaces. Full LBRP and ancillary work as appropriate to the territory.
           </p>
-          <a href="#contact" class="btn btn-ghost">Inquire</a>
+          <div class="card-actions"><a href="/services/banishing-rituals/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Inquire</a></div>
         </div>
 
         <div class="price-card">
@@ -562,7 +595,7 @@
           <p class="description">
             A full consecration ritual to make a new deck your own. Performed at appropriate planetary hour with attendant invocations.
           </p>
-          <a href="#contact" class="btn btn-ghost">Inquire</a>
+          <div class="card-actions"><a href="/services/tarot-deck-consecration/" class="btn btn-ghost">Learn more</a><a href="#contact" class="btn btn-ghost">Inquire</a></div>
         </div>
 
         <div class="price-card">
