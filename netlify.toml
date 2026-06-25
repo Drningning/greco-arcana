@@ -1,0 +1,166 @@
+# Netlify configuration for Greco Arcana
+
+[build]
+  publish = "."
+
+# Pretty URLs — these are the redirects for the new multi-page structure.
+# Netlify by default serves /services/banishing-rituals/index.html at the
+# URL /services/banishing-rituals/ — these redirects ensure clean URLs work
+# even if someone visits without the trailing slash, or via legacy anchor links.
+
+[[redirects]]
+  from = "/services/banishing-rituals"
+  to = "/services/banishing-rituals/"
+  status = 301
+
+[[redirects]]
+  from = "/services/hermetic-tarot-reading"
+  to = "/services/hermetic-tarot-reading/"
+  status = 301
+
+[[redirects]]
+  from = "/services/hermetic-praxis-reading"
+  to = "/services/hermetic-praxis-reading/"
+  status = 301
+
+[[redirects]]
+  from = "/services/ceremonial-magic"
+  to = "/services/ceremonial-magic/"
+  status = 301
+
+[[redirects]]
+  from = "/services/talismans-and-amulets"
+  to = "/services/talismans-and-amulets/"
+  status = 301
+
+[[redirects]]
+  from = "/services/tarot-deck-consecration"
+  to = "/services/tarot-deck-consecration/"
+  status = 301
+
+[[redirects]]
+  from = "/services/shewstone-consecration"
+  to = "/services/shewstone-consecration/"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/services/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey"
+  to = "/new-jersey/"
+  status = 301
+
+
+# --- Lectures: pretty URLs for the new lecture pages ---
+[[redirects]]
+  from = "/lectures"
+  to = "/lectures/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/how-i-read-tarot-correspondences"
+  to = "/lectures/how-i-read-tarot-correspondences/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/how-tarot-really-works"
+  to = "/lectures/how-tarot-really-works/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/which-tarot-deck-minor-arcana"
+  to = "/lectures/which-tarot-deck-minor-arcana/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/three-point-tarot-spread"
+  to = "/lectures/three-point-tarot-spread/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-twos-of-tarot"
+  to = "/lectures/the-twos-of-tarot/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-fours-of-tarot"
+  to = "/lectures/the-fours-of-tarot/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-sevens-of-tarot"
+  to = "/lectures/the-sevens-of-tarot/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-nines-of-tarot"
+  to = "/lectures/the-nines-of-tarot/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-devil-tarot-card-meaning"
+  to = "/lectures/the-devil-tarot-card-meaning/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-lovers-tarot-card-meaning"
+  to = "/lectures/the-lovers-tarot-card-meaning/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/page-of-swords-meaning"
+  to = "/lectures/page-of-swords-meaning/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/nine-of-swords-meaning"
+  to = "/lectures/nine-of-swords-meaning/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/what-is-freemasonry"
+  to = "/lectures/what-is-freemasonry/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/the-lost-word"
+  to = "/lectures/the-lost-word/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/freemasonry-and-lineage"
+  to = "/lectures/freemasonry-and-lineage/"
+  status = 301
+
+# --- Retired Essays: 301 the old /writings/ paths (incl. the stray "files 3" folder) to home ---
+[[redirects]]
+  from = "/writings/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/writings"
+  to = "/"
+  status = 301
+
+# Cache static assets aggressively
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
