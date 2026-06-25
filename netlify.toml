@@ -53,6 +53,48 @@
   to = "/new-jersey/"
   status = 301
 
+# --- New Jersey town pages: pretty URLs ---
+[[redirects]]
+  from = "/new-jersey/bayonne"
+  to = "/new-jersey/bayonne/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/jersey-city"
+  to = "/new-jersey/jersey-city/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/hoboken"
+  to = "/new-jersey/hoboken/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/montclair"
+  to = "/new-jersey/montclair/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/westfield"
+  to = "/new-jersey/westfield/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/red-bank"
+  to = "/new-jersey/red-bank/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/princeton"
+  to = "/new-jersey/princeton/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/asbury-park"
+  to = "/new-jersey/asbury-park/"
+  status = 301
+
+
 
 # --- Lectures: pretty URLs for the new lecture pages ---
 [[redirects]]
