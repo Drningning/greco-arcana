@@ -1,0 +1,69 @@
+GRECO ARCANA - SITE UPDATE - 2026-06-26
+========================================
+
+HOW TO DEPLOY
+-------------
+Unzip greco-arcana-update-2026-06-26.zip. Inside is the full site folder
+(the same structure as your repo root). In GitHub: Add file > Upload files,
+then drag in the CONTENTS of the unzipped folder (index.html, netlify.toml,
+sitemap.xml, the services/ folder, the new-jersey/ folder, etc.), and commit.
+Uploading overwrites the matching files and adds the two new town folders.
+Netlify rebuilds in about a minute.
+
+You can safely upload everything. The footer link changed on every page, so
+every page is included in this update.
+
+
+TASK 1 - BANISHING REFRAMED AS CEREMONIAL MAGIC
+-----------------------------------------------
+- /services/ceremonial-magic/index.html  ->  REWRITTEN as the single bookable
+  offering. Covers on-site clearing/banishing AND consecration of spaces and
+  altars. The Lesser Banishing Ritual of the Pentagram is named NOWHERE; copy
+  now says the banishing method is chosen to suit the territory, drawn from
+  across the ceremonial, mystical, and occult branches of the tradition.
+  Keeps the $250 on-site framing. 12 FAQs (right-hand-path ethics + practical
+  clearing), with matching FAQPage schema and Service schema ($250 offer).
+
+- /services/banishing-rituals/index.html  ->  replaced with a small redirect
+  stub (noindex, canonical + meta refresh to /services/ceremonial-magic/).
+
+- netlify.toml  ->  the old /services/banishing-rituals/ path now 301-redirects
+  (forced) to /services/ceremonial-magic/, so its existing "banishing ritual NJ"
+  / "house cleansing" ranking passes to the new page.
+
+- Site-wide: every footer "Ceremonial" column, the homepage offering card, the
+  /services/ card, and the /new-jersey/ card now read "Ceremonial Magic" and
+  link to /services/ceremonial-magic/. No LBRP mention remains anywhere.
+
+  NOTE / ONE THING TO CONFIRM: I consolidated to ONE page. If you would rather
+  keep a separate dedicated banishing/clearing page for that exact search term,
+  tell me and I will split it back out (the 301 makes this fully reversible).
+
+
+TASK 2 - LOCAL TOWN PAGES (10)
+------------------------------
+Title format on every page: "{Town} Tarot Reading & Ceremonial Magic | Greco Arcana"
+Each page: hero with two buttons (Book a Reading + View Offerings) and a bottom
+CTA with two buttons (Book a Tarot Reading + View All Offerings -> /services/).
+
+UPDATED (8):
+  jersey-city (personal Masonic note preserved), montclair, hoboken, westfield,
+  asbury-park, bayonne, princeton, red-bank
+NEW (2):
+  summit, cape-may  (new folders under /new-jersey/)
+
+- /new-jersey/index.html  ->  Summit and Cape May are now links; ceremonial card
+  reframed.
+- sitemap.xml  ->  added summit + cape-may, removed banishing-rituals, refreshed
+  lastmod dates.
+- netlify.toml  ->  added trailing-slash redirects for summit and cape-may.
+
+
+EDITORIAL
+---------
+- No en-dashes or em-dashes in any page I created or edited (town pages, the
+  Ceremonial Magic page, the homepage/services/new-jersey cards). I also
+  normalized the shared footer line site-wide so it is consistent and dash-free.
+- Older lecture pages I did not otherwise touch may still contain pre-existing
+  em-dashes in their body copy; I left those alone to avoid unrelated changes.
+  Say the word and I'll sweep those too.

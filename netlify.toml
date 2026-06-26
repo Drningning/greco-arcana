@@ -8,10 +8,20 @@
 # URL /services/banishing-rituals/ — these redirects ensure clean URLs work
 # even if someone visits without the trailing slash, or via legacy anchor links.
 
+# Banishing Rituals consolidated into Ceremonial Magic. 301 the old paths so the
+# existing "banishing ritual NJ" / "house cleansing" ranking passes to the new page.
+# force = true so the redirect wins even if the old file is still present on the host.
+[[redirects]]
+  from = "/services/banishing-rituals/*"
+  to = "/services/ceremonial-magic/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/services/banishing-rituals"
-  to = "/services/banishing-rituals/"
+  to = "/services/ceremonial-magic/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/services/hermetic-tarot-reading"
@@ -92,6 +102,16 @@
 [[redirects]]
   from = "/new-jersey/asbury-park"
   to = "/new-jersey/asbury-park/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/summit"
+  to = "/new-jersey/summit/"
+  status = 301
+
+[[redirects]]
+  from = "/new-jersey/cape-may"
+  to = "/new-jersey/cape-may/"
   status = 301
 
 
