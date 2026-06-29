@@ -244,6 +244,59 @@
   </div>
 </section>
 
+<!-- ============ INSTAGRAM FEED ============ -->
+<section class="ig-feed" id="instagram" style="padding: 5.5rem 0; background: var(--ink-deep); border-top: 1px solid rgba(201,169,110,0.15);">
+  <style>
+    .ig-feed .ig-head { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+    .ig-feed .ig-head h2 { font-family: var(--serif-display); font-size: clamp(1.5rem, 2.8vw, 2.1rem); font-weight: 500; color: var(--vellum); letter-spacing: 0.02em; margin-bottom: 1rem; }
+    .ig-feed .ig-head p { color: var(--vellum-aged); font-size: 1.05rem; line-height: 1.7; }
+    .ig-feed .ig-embed { max-width: 1040px; margin: 0 auto; }
+    /* Placeholder grid (delete once the real embed is pasted in) */
+    .ig-feed .ig-placeholder { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .ig-feed .ig-tile { aspect-ratio: 1 / 1; border: 1px solid rgba(201,169,110,0.22); background: linear-gradient(160deg, rgba(201,169,110,0.05), rgba(10,13,20,0.6)); display: flex; align-items: center; justify-content: center; }
+    .ig-feed .ig-tile svg { width: 38px; height: 38px; color: var(--gold-deep); opacity: 0.55; }
+    .ig-feed .ig-follow { text-align: center; margin-top: 2.6rem; }
+    @media (max-width: 860px) { .ig-feed .ig-placeholder { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .ig-feed .ig-placeholder { grid-template-columns: 1fr; } }
+  </style>
+  <div class="container">
+    <div class="ig-head reveal">
+      <span class="eyebrow" style="display:block; margin-bottom: 1.4rem;">Instagram</span>
+      <h2>From the Greco Arcana Instagram</h2>
+      <p>Recent reflections on tarot, ritual, symbolism, Freemasonry, and the Western Mystery Tradition.</p>
+    </div>
+
+    <div class="ig-embed reveal">
+
+      <!-- ============================================================== -->
+      <!-- PASTE YOUR ELFSIGHT OR LIGHTWIDGET EMBED CODE BELOW THIS LINE.  -->
+      <!-- (Configure a 6-post grid, dark theme, in your widget dashboard.)-->
+      <!-- ============================================================== -->
+<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-079e5f8d-cc93-4c63-8c75-10e5fe35a03d" data-elfsight-app-lazy></div>
+
+
+      <!-- ============================================================== -->
+      <!-- PASTE EMBED CODE ABOVE THIS LINE.                              -->
+      <!-- Once your real feed is in, DELETE the placeholder grid below.  -->
+      <!-- ============================================================== -->
+     
+
+    </div>
+
+    <div class="ig-follow reveal">
+      <a href="https://www.instagram.com/grecoarcana/" target="_blank" rel="noopener" class="btn btn-ghost">
+        Follow Greco Arcana on Instagram
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section class="about" id="about">
   <div class="container">
@@ -265,14 +318,24 @@
     </div>
 
     <div class="about-grid">
-      <div class="reveal">
-        <div class="portrait-frame">
+      <div class="reveal" style="text-align:center;">
+        <div class="portrait-frame" style="max-width:300px;margin:0 auto;">
           <div class="ornament"></div>
           <div class="portrait-img">
-            <img src="/assets/img/joseph-greco.png" alt="Joseph Greco — hermetic practitioner, 32° Mason and Knight of the Rose Croix" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+            <img src="/assets/img/joseph-greco.png" alt="Joseph Greco, hermetic practitioner, 32 degree Mason and Knight of the Rose Croix" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           </div>
         </div>
-        <p class="portrait-caption" style="margin-top: 2.5rem;">— Joseph Greco, 32° · K.R.C.</p>
+        <p class="portrait-caption" style="margin-top: 2.5rem;">Joseph Greco, 32&deg; &middot; K.R.C.</p>
+        <div style="margin-top:6rem;display:flex;flex-direction:column;align-items:center;gap:1.1rem;color:var(--gold);">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.1" style="width:62px;height:62px;opacity:0.92;">
+            <circle cx="50" cy="50" r="42"/>
+            <path d="M50 8 L92 50 L50 92 L8 50 Z"/>
+            <path d="M50 8 L50 92 M8 50 L92 50"/>
+            <circle cx="50" cy="50" r="6" fill="currentColor"/>
+          </svg>
+          <span style="font-family:var(--serif-display);font-size:1.05rem;font-weight:500;letter-spacing:0.34em;color:var(--vellum);text-transform:uppercase;">Greco Arcana</span>
+          <span style="font-family:var(--serif-italic);font-style:italic;font-size:0.92rem;letter-spacing:0.05em;color:var(--gold);">Solve et Coagula</span>
+        </div>
       </div>
 
       <div class="about-text reveal">
@@ -282,24 +345,24 @@
           Joseph Greco is a practitioner of the Western esoteric tradition, working at the intersection of tarot, astrology, numerology, and ritual arts. His work is rooted in a long-standing initiatic path through systems including Hermeticism, Rosicrucianism, Qabalah, and the symbolic sciences of alchemy and sacred geometry.
         </p>
         <p>
-          What began as the study of separate disciplines revealed itself, over time, as a single current—an integrated tradition often referred to as the <em>Perennial Philosophy</em>. Rather than approaching these arts in isolation, Joseph works within their underlying unity, using multiple systems together to reveal consistent patterns, themes, and direction.
+          What began as the study of separate disciplines revealed itself, over time, as a single current, an integrated tradition often referred to as the <em>Perennial Philosophy</em>. Rather than approaching these arts in isolation, Joseph works within their underlying unity, using multiple systems together to reveal consistent patterns, themes, and direction.
         </p>
         <p>
-          His training includes apprenticeships and formal study in tarot, ceremonial magic, astrological practice, and the broader Western mystery tradition, supported by years of disciplined work, mentorship, and direct experience. The result is a structured, multi-system approach designed to provide clear, grounded insight—helping clients better understand their situation, their patterns, and the forces shaping both.
+          His training includes apprenticeships and formal study in tarot, ceremonial magic, astrological practice, and the broader Western mystery tradition, supported by years of disciplined work, mentorship, and direct experience. The result is a structured, multi-system approach designed to provide clear, grounded insight that helps clients better understand their situation, their patterns, and the forces shaping both.
         </p>
         <p>
           This practice is not oriented toward general entertainment. It is designed for individuals seeking clear, structured insight at meaningful points of decision, transition, or realignment. <em>Engagements are selective and focused. The work is direct, integrative, and grounded in years of disciplined study, apprenticeship, and application.</em>
         </p>
+      </div>
+    </div>
 
-        <button class="honors-toggle" id="honorsToggle">
-          View Initiatory Honors
-          <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polyline points="6 9 12 15 18 9"/>
-          </svg>
-        </button>
-
-        <div class="honors-panel" id="honorsPanel">
-          <div class="honors-grid">
+    <div class="initiatic-record reveal" style="margin-top:5.5rem;padding-top:4rem;border-top:1px solid rgba(201,169,110,0.2);">
+      <div style="text-align:center;max-width:760px;margin:0 auto 3rem;">
+        <span class="eyebrow" style="display:block;margin-bottom:1.4rem;">The Initiatic Record</span>
+        <h3 style="font-family:var(--serif-display);font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:500;color:var(--vellum);letter-spacing:0.02em;line-height:1.25;margin-bottom:1.1rem;">Every degree, set out in full.</h3>
+        <p style="color:var(--vellum-aged);font-size:1.08rem;line-height:1.75;">These are not honorifics gathered for display. Each line below is a degree conferred, a grade earned, or an office held. The record is set out openly, in full, so that the depth of the path can be read rather than taken on faith.</p>
+      </div>
+<div class="honors-grid">
             <div class="honor-group">
               <h4>Ancient Craft · Blue Lodge</h4>
               <ul>
@@ -379,9 +442,8 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
     </div>
+
   </div>
 </section>
 
@@ -849,59 +911,6 @@
       </p>
       <a href="/new-jersey/" class="btn btn-ghost">
         New Jersey & Greater New York
-        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="5" y1="12" x2="19" y2="12"/>
-          <polyline points="12 5 19 12 12 19"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ INSTAGRAM FEED ============ -->
-<section class="ig-feed" id="instagram" style="padding: 5.5rem 0; background: var(--ink-deep); border-top: 1px solid rgba(201,169,110,0.15);">
-  <style>
-    .ig-feed .ig-head { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
-    .ig-feed .ig-head h2 { font-family: var(--serif-display); font-size: clamp(1.5rem, 2.8vw, 2.1rem); font-weight: 500; color: var(--vellum); letter-spacing: 0.02em; margin-bottom: 1rem; }
-    .ig-feed .ig-head p { color: var(--vellum-aged); font-size: 1.05rem; line-height: 1.7; }
-    .ig-feed .ig-embed { max-width: 1040px; margin: 0 auto; }
-    /* Placeholder grid (delete once the real embed is pasted in) */
-    .ig-feed .ig-placeholder { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .ig-feed .ig-tile { aspect-ratio: 1 / 1; border: 1px solid rgba(201,169,110,0.22); background: linear-gradient(160deg, rgba(201,169,110,0.05), rgba(10,13,20,0.6)); display: flex; align-items: center; justify-content: center; }
-    .ig-feed .ig-tile svg { width: 38px; height: 38px; color: var(--gold-deep); opacity: 0.55; }
-    .ig-feed .ig-follow { text-align: center; margin-top: 2.6rem; }
-    @media (max-width: 860px) { .ig-feed .ig-placeholder { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 520px) { .ig-feed .ig-placeholder { grid-template-columns: 1fr; } }
-  </style>
-  <div class="container">
-    <div class="ig-head reveal">
-      <span class="eyebrow" style="display:block; margin-bottom: 1.4rem;">Instagram</span>
-      <h2>From the Greco Arcana Instagram</h2>
-      <p>Recent reflections on tarot, ritual, symbolism, Freemasonry, and the Western Mystery Tradition.</p>
-    </div>
-
-    <div class="ig-embed reveal">
-
-      <!-- ============================================================== -->
-      <!-- PASTE YOUR ELFSIGHT OR LIGHTWIDGET EMBED CODE BELOW THIS LINE.  -->
-      <!-- (Configure a 6-post grid, dark theme, in your widget dashboard.)-->
-      <!-- ============================================================== -->
-<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-079e5f8d-cc93-4c63-8c75-10e5fe35a03d" data-elfsight-app-lazy></div>
-
-
-      <!-- ============================================================== -->
-      <!-- PASTE EMBED CODE ABOVE THIS LINE.                              -->
-      <!-- Once your real feed is in, DELETE the placeholder grid below.  -->
-      <!-- ============================================================== -->
-     
-
-    </div>
-
-    <div class="ig-follow reveal">
-      <a href="https://www.instagram.com/grecoarcana/" target="_blank" rel="noopener" class="btn btn-ghost">
-        Follow Greco Arcana on Instagram
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="5" y1="12" x2="19" y2="12"/>
           <polyline points="12 5 19 12 12 19"/>
