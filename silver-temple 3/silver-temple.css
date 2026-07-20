@@ -1,0 +1,206 @@
+
+/* ============ The Silver Temple ============ */
+:root{
+  --midnight:#0d1320;
+  --midnight-2:#131b2c;
+  --ink:#1c2434;
+  --silver:#c9cfda;
+  --silver-dim:#8e97a8;
+  --moonlight:#eceada;
+  --accent:#a9b6cf;
+  --hairline:rgba(201,207,218,.18);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --body:'EB Garamond',Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--midnight);
+  color:var(--silver);
+  font-family:var(--body);
+  font-size:1.15rem;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+/* ---------- Header / nav ---------- */
+header.st-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(13,19,32,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--hairline);
+}
+.st-nav{
+  max-width:72rem;margin:0 auto;padding:.9rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.st-brand{
+  font-family:var(--serif);font-size:1.45rem;letter-spacing:.06em;
+  color:var(--moonlight);text-decoration:none;white-space:nowrap;
+}
+.st-brand .moon{color:var(--accent);margin-right:.4rem}
+.st-brand small{
+  display:block;font-family:var(--body);font-size:.62rem;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--silver-dim);
+}
+nav.st-menu{display:flex;align-items:center;gap:1.4rem}
+nav.st-menu a{
+  color:var(--silver);text-decoration:none;font-size:.98rem;
+  letter-spacing:.05em;padding:.35rem 0;border-bottom:1px solid transparent;
+  transition:color .2s,border-color .2s;
+}
+nav.st-menu a:hover,nav.st-menu a.active{color:var(--moonlight);border-bottom-color:var(--accent)}
+/* dropdown */
+.st-drop{position:relative}
+.st-drop>button{
+  background:none;border:none;cursor:pointer;color:var(--silver);
+  font-family:var(--body);font-size:.98rem;letter-spacing:.05em;
+  padding:.35rem 0;display:flex;align-items:center;gap:.35rem;
+}
+.st-drop>button:hover{color:var(--moonlight)}
+.st-drop>button .caret{font-size:.7rem;transition:transform .2s}
+.st-drop .st-drop-panel{
+  visibility:hidden;opacity:0;transform:translateY(6px);
+  transition:opacity .18s,transform .18s,visibility .18s;
+  position:absolute;right:0;top:calc(100% + .6rem);min-width:16.5rem;
+  background:var(--midnight-2);border:1px solid var(--hairline);
+  border-radius:4px;padding:.5rem 0;box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+.st-drop:hover .st-drop-panel,.st-drop:focus-within .st-drop-panel{
+  visibility:visible;opacity:1;transform:translateY(0);
+}
+.st-drop:hover .caret{transform:rotate(180deg)}
+.st-drop-panel a{
+  display:block;padding:.45rem 1.2rem;border-bottom:none;font-size:.94rem;
+}
+.st-drop-panel a:hover{background:rgba(169,182,207,.08);border-bottom:none}
+.st-drop-panel .st-drop-head{
+  padding:.5rem 1.2rem .3rem;font-size:.68rem;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--silver-dim);
+}
+.st-drop-panel hr{border:none;border-top:1px solid var(--hairline);margin:.4rem 0}
+/* mobile */
+#st-nav-toggle{display:none}
+.st-hamburger{display:none;cursor:pointer;color:var(--silver);font-size:1.6rem;line-height:1;padding:.2rem .4rem}
+@media(max-width:880px){
+  .st-hamburger{display:block}
+  nav.st-menu{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:var(--midnight-2);border-bottom:1px solid var(--hairline);
+    flex-direction:column;align-items:flex-start;gap:0;padding:.6rem 0 1rem;
+  }
+  #st-nav-toggle:checked ~ nav.st-menu{display:flex}
+  nav.st-menu>a,.st-drop{width:100%}
+  nav.st-menu>a{padding:.55rem 1.5rem}
+  .st-drop>button{padding:.55rem 1.5rem;width:100%;justify-content:space-between}
+  .st-drop .st-drop-panel{
+    position:static;visibility:visible;opacity:1;transform:none;
+    box-shadow:none;border:none;border-left:1px solid var(--hairline);
+    margin:0 0 .4rem 1.5rem;min-width:0;
+  }
+}
+/* ---------- Hero ---------- */
+.st-hero{
+  text-align:center;padding:5.5rem 1.5rem 4rem;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% -5%,rgba(169,182,207,.16),transparent),
+    var(--midnight);
+  border-bottom:1px solid var(--hairline);
+}
+.st-hero .moon-glyph{
+  font-size:2.4rem;color:var(--accent);display:block;margin-bottom:1.2rem;
+  text-shadow:0 0 30px rgba(169,182,207,.55);
+}
+.st-hero h1{
+  font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,5vw,3.6rem);
+  color:var(--moonlight);letter-spacing:.04em;
+}
+.st-hero .st-kicker{
+  font-size:.75rem;letter-spacing:.42em;text-transform:uppercase;
+  color:var(--silver-dim);margin-bottom:1rem;
+}
+.st-hero p.lede{
+  max-width:38rem;margin:1.4rem auto 0;font-size:1.22rem;
+  font-style:italic;color:var(--silver);
+}
+/* ---------- Content ---------- */
+main.st-main{max-width:44rem;margin:0 auto;padding:3.5rem 1.5rem 5rem}
+main.st-main h2{
+  font-family:var(--serif);font-weight:500;font-size:1.9rem;color:var(--moonlight);
+  margin:2.8rem 0 1rem;letter-spacing:.03em;
+}
+main.st-main h2:first-child{margin-top:0}
+main.st-main h3{
+  font-family:var(--serif);font-weight:500;font-size:1.45rem;color:var(--moonlight);
+  margin:2.2rem 0 .7rem;
+}
+main.st-main p{margin:0 0 1.15rem}
+main.st-main p.center{text-align:center}
+main.st-main a{color:var(--accent)}
+main.st-main a:hover{color:var(--moonlight)}
+main.st-main ul{margin:0 0 1.15rem 1.4rem}
+main.st-main li{margin-bottom:.45rem}
+main.st-main em{color:var(--moonlight)}
+.st-rule{
+  border:none;text-align:center;margin:2.6rem auto;
+}
+.st-rule::after{content:'☽ ✦ ☾';color:var(--silver-dim);font-size:.95rem;letter-spacing:.7em;padding-left:.7em}
+blockquote.st-quote{
+  border-left:2px solid var(--accent);padding:.4rem 0 .4rem 1.4rem;
+  margin:1.8rem 0;font-style:italic;color:var(--moonlight);font-size:1.22rem;
+}
+/* grade cards */
+.st-grade{
+  border:1px solid var(--hairline);border-radius:4px;
+  padding:1.4rem 1.6rem;margin-bottom:1.1rem;background:var(--midnight-2);
+}
+.st-grade h3{margin:0 0 .4rem}
+.st-grade p{margin:0}
+.st-grade .st-grade-note{
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--silver-dim);margin-bottom:.35rem;
+}
+/* FAQ */
+details.st-faq{border-bottom:1px solid var(--hairline);padding:1rem 0}
+details.st-faq summary{
+  cursor:pointer;font-family:var(--serif);font-size:1.3rem;color:var(--moonlight);
+  list-style:none;position:relative;padding-right:2rem;
+}
+details.st-faq summary::-webkit-details-marker{display:none}
+details.st-faq summary::after{
+  content:'☽';position:absolute;right:.2rem;color:var(--silver-dim);
+  transition:transform .25s;
+}
+details.st-faq[open] summary::after{transform:rotate(-90deg);color:var(--accent)}
+details.st-faq p{margin-top:.8rem}
+/* library cards */
+.st-lib-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2rem}
+a.st-lib-card{
+  display:block;border:1px solid var(--hairline);border-radius:4px;
+  padding:1.4rem 1.6rem;background:var(--midnight-2);text-decoration:none;
+  transition:border-color .2s,transform .2s;
+}
+a.st-lib-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+a.st-lib-card h3{margin:0 0 .4rem;font-family:var(--serif);font-weight:500;font-size:1.4rem;color:var(--moonlight)}
+a.st-lib-card p{margin:0;color:var(--silver);font-size:1.02rem}
+/* buttons */
+.st-btn{
+  display:inline-block;margin-top:1rem;padding:.8rem 2.2rem;
+  border:1px solid var(--accent);border-radius:2px;color:var(--moonlight);
+  text-decoration:none;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;
+  transition:background .2s;
+}
+.st-btn:hover{background:rgba(169,182,207,.12)}
+.st-back{
+  display:inline-block;margin-bottom:2rem;font-size:.85rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--silver-dim);text-decoration:none;
+}
+.st-back:hover{color:var(--moonlight)}
+/* footer */
+footer.st-footer{
+  border-top:1px solid var(--hairline);text-align:center;
+  padding:3rem 1.5rem 3.5rem;color:var(--silver-dim);font-size:.95rem;
+}
+footer.st-footer .moon{color:var(--accent);display:block;margin-bottom:.8rem;font-size:1.2rem}
+footer.st-footer nav{margin-top:1rem;display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center}
+footer.st-footer a{color:var(--silver-dim);text-decoration:none}
+footer.st-footer a:hover{color:var(--moonlight)}
