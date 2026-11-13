@@ -39,6 +39,11 @@
   status = 301
 
 [[redirects]]
+  from = "/services/altar-creation"
+  to = "/services/altar-creation/"
+  status = 301
+
+[[redirects]]
   from = "/services/talismans-and-amulets"
   to = "/services/talismans-and-amulets/"
   status = 301

@@ -35,6 +35,13 @@
   .faq-item[open] summary::after{content:"–";}
   .faq-item summary:hover{color:var(--gold-bright);}
   .faq-item .faq-a{padding:0 0 1.4rem;color:var(--vellum-aged);font-size:1.06rem;line-height:1.75;}
+  .page-figs{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:2.8rem 0;}
+  .page-figs.single{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto;}
+  .page-fig{margin:0;}
+  .page-fig img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(201,169,110,0.35);
+    outline:1px solid rgba(201,169,110,0.25);outline-offset:-10px;box-shadow:0 24px 50px -24px rgba(0,0,0,0.85);}
+  .page-fig figcaption{margin-top:0.8rem;font-family:var(--serif-italic);font-style:italic;font-size:0.95rem;color:var(--vellum-aged);text-align:center;}
+  @media(max-width:600px){.page-figs{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -83,7 +90,14 @@
     <h2>Why Consecrate a Deck</h2>
     <p>A new tarot deck is, until it is consecrated, an inert collection of printed cards. The consecration ceremony transforms the deck into an instrument: dedicated to its work, aligned to its tradition, and rooted in the operator who will employ it.</p>
     <p>The ceremony draws from the working methods of the Western Mystery Tradition. It is appropriate for any serious deck — whether you have just acquired your first Rider-Waite-Smith, a Thoth deck, a Marseille, or a Golden Dawn deck — and the consecration is tailored to the symbolic system of the deck in question.</p>
-    <h2>What the Consecration Includes</h2>
+        <div class="page-figs single">
+      <figure class="page-fig">
+        <img src="/assets/img/photos/deck-collection.jpg" alt="More than twenty tarot decks laid out on a desk: Golden Dawn, Marseille, Thoth, and Masonic decks among them" loading="lazy">
+        <figcaption>A working collection. Every deck here has been made its owner's own.</figcaption>
+      </figure>
+    </div>
+
+<h2>What the Consecration Includes</h2>
     <ul>
       <li>Consultation to understand the deck and its intended use</li>
       <li>Calculation of the proper planetary hour and astrological conditions</li>

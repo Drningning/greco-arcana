@@ -35,6 +35,13 @@
   .faq-item[open] summary::after{content:"–";}
   .faq-item summary:hover{color:var(--gold-bright);}
   .faq-item .faq-a{padding:0 0 1.4rem;color:var(--vellum-aged);font-size:1.06rem;line-height:1.75;}
+  .page-figs{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:2.8rem 0;}
+  .page-figs.single{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto;}
+  .page-fig{margin:0;}
+  .page-fig img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(201,169,110,0.35);
+    outline:1px solid rgba(201,169,110,0.25);outline-offset:-10px;box-shadow:0 24px 50px -24px rgba(0,0,0,0.85);}
+  .page-fig figcaption{margin-top:0.8rem;font-family:var(--serif-italic);font-style:italic;font-size:0.95rem;color:var(--vellum-aged);text-align:center;}
+  @media(max-width:600px){.page-figs{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -91,7 +98,18 @@
     <p>Where appropriate, Hebrew gematria is applied to names, words, and symbols arising in the reading — the same technique used by the qabalistic tradition to reveal hidden correspondence.</p>
     <h3>Herbal Alchemy</h3>
     <p>Plant and herbal correspondences relevant to the planetary forces and conditions uncovered in the reading. Where a talisman or amulet is appropriate, the herbal prescription is included.</p>
-    <h2>What You Receive</h2>
+        <div class="page-figs">
+      <figure class="page-fig">
+        <img src="/assets/img/photos/praxis-study-altar.jpg" alt="A study altar for the Praxis Reading: crystal skull on an open Bible, a geometry notebook, three tarot decks, and Qabalistic diagrams" loading="lazy">
+        <figcaption>The working table: scripture, geometry, the Tree, and the cards.</figcaption>
+      </figure>
+      <figure class="page-fig">
+        <img src="/assets/img/photos/court-card-spread.jpg" alt="All sixteen tarot court cards laid in a cruciform pattern on a round wooden table" loading="lazy">
+        <figcaption>The sixteen courts, laid out by element and rank.</figcaption>
+      </figure>
+    </div>
+
+<h2>What You Receive</h2>
     <ul>
       <li>A 90-minute live reading, in person or by Zoom</li>
       <li>Written notes on the natal chart and numerology, prepared in advance</li>
