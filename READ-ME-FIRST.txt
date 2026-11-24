@@ -1,0 +1,31 @@
+GRECO ARCANA - UPDATE: THE OCCULT ARCHIVES + THE LIBRARY MENU
+=============================================================
+Deploy as usual: GitHub repo -> Add file -> Upload files -> drag in the
+CONTENTS of this folder (keep the folder structure; you can leave this
+READ-ME file out) -> Commit changes. Netlify rebuilds in about a minute.
+
+NEW SECTION
+  /occult-archives/                                    The Occult Archives (landing)
+  /occult-archives/chronicles/                         Chronicles of the Occult
+  /occult-archives/john-dee-edward-kelley/             When the Angels Demanded Their Wives
+  /occult-archives/objects-of-power/                   Objects of Power + Catalogue of Lost Treasures
+  /occult-archives/objects-of-power/ring-of-solomon/   Dossier No. 001
+  /occult-archives/objects-of-power/ring-of-gyges/     Dossier No. 019
+  /occult-archives/objects-of-power/golden-menorah-of-jerusalem/   Dossier No. 048
+  /occult-archives/objects-of-power/gaming-board-of-gwenddoleu/    Dossier No. 049
+
+CHANGED ON EVERY EXISTING PAGE (except the Silver Temple, which has its own menu)
+  - Menu: The Practitioner | Offerings | The Library (Occult Archives, Hidden
+    New Jersey, Lectures) | The Silver Temple, plus "Inquire" in the phone menu
+  - Footer: "The Occult Archives" added to the Practice column
+  - Footer styling fixed (bullets and plain headings were showing site-wide),
+    the copyright line made legible, and the phone menu made solid
+
+ALSO CHANGED
+  netlify.toml  - runs scripts/build_archives.py on deploy; clean-URL redirects
+  sitemap.xml   - the 7 indexable Archive pages added (the Chronicles hub stays
+                  hidden from search until it has 3 articles)
+  robots.txt    - keeps search engines out of /scripts/ and the content source
+
+TO PUBLISH THE NEXT DOSSIER: see scripts/PUBLISHING-GUIDE.md
+main.css is untouched.

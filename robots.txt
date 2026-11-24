@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /occult-archives/_src/
 
 Sitemap: https://grecoarcana.com/sitemap.xml

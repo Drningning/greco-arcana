@@ -66,6 +66,7 @@
 
 <!-- STYLES -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/nav-v1.css">
 <style>
   .page-figs{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:2.8rem 0;}
   .page-figs.single{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto;}
@@ -169,12 +170,18 @@
       </svg>
       Greco Arcana
     </a>
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links" id="navLinks"><!-- nav:library-v1 -->
       <li><a href="/#about">The Practitioner</a></li>
       <li><a href="/services/">Offerings</a></li>
-      <li><a href="/lectures/">Lectures</a></li>
-      <li><a href="/new-jersey/" style="color: var(--gold);">Hidden New Jersey</a></li>
-      <li><a href="/#contact">Inquire</a></li>
+      <li class="nav-has-menu is-active"><a href="/occult-archives/">The Library</a>
+        <ul class="nav-submenu">
+          <li><a href="/occult-archives/">The Occult Archives<span class="nav-sub-note">Chronicles &amp; Objects of Power</span></a></li>
+          <li><a href="/new-jersey/" aria-current="page">Hidden New Jersey<span class="nav-sub-note">Folklore of the towns I serve</span></a></li>
+          <li><a href="/lectures/">Lectures<span class="nav-sub-note">The recorded corpus</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/silver-temple/">The Silver Temple</a></li>
+      <li class="nav-mobile-only"><a href="/#contact">Inquire</a></li>
     </ul>
     <a href="/#contact" class="nav-cta">Book a Reading</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -419,6 +426,7 @@
           <li><a href="/#pricing">Pricing</a></li>
           <li><a href="/new-jersey/">Hidden New Jersey</a></li>
           <li><a href="/lectures/">Lectures</a></li>
+          <li><a href="/occult-archives/">The Occult Archives</a></li>
         </ul>
       </div>
       <div>

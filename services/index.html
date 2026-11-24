@@ -21,6 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/nav-v1.css">
 </head>
 <body>
 
@@ -36,12 +37,18 @@
       </svg>
       Greco Arcana
     </a>
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links" id="navLinks"><!-- nav:library-v1 -->
       <li><a href="/#about">The Practitioner</a></li>
-      <li><a href="/services/" style="color: var(--gold);">Offerings</a></li>
-      <li><a href="/lectures/">Lectures</a></li>
-      <li><a href="/new-jersey/">Hidden New Jersey</a></li>
-      <li><a href="/#contact">Inquire</a></li>
+      <li class="is-active"><a href="/services/" aria-current="page">Offerings</a></li>
+      <li class="nav-has-menu"><a href="/occult-archives/">The Library</a>
+        <ul class="nav-submenu">
+          <li><a href="/occult-archives/">The Occult Archives<span class="nav-sub-note">Chronicles &amp; Objects of Power</span></a></li>
+          <li><a href="/new-jersey/">Hidden New Jersey<span class="nav-sub-note">Folklore of the towns I serve</span></a></li>
+          <li><a href="/lectures/">Lectures<span class="nav-sub-note">The recorded corpus</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/silver-temple/">The Silver Temple</a></li>
+      <li class="nav-mobile-only"><a href="/#contact">Inquire</a></li>
     </ul>
     <a href="/#begin" class="nav-cta">Begin a Consultation</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -182,6 +189,7 @@
           <li><a href="/#pricing">Pricing</a></li>
           <li><a href="/new-jersey/">Hidden New Jersey</a></li>
           <li><a href="/lectures/">Lectures</a></li>
+          <li><a href="/occult-archives/">The Occult Archives</a></li>
         </ul>
       </div>
       <div>

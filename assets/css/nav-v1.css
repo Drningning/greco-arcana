@@ -1,0 +1,128 @@
+/* ============================================
+   GRECO ARCANA: NAVIGATION ADDITIONS (v1)
+   The Library dropdown, loaded on every page after main.css.
+   main.css is left untouched. If you change this file, save it under a
+   new name (nav-v2.css) because Netlify caches /assets/css/* for a year.
+   ============================================ */
+
+.nav-links .nav-has-menu { position: relative; }
+
+.nav-links .nav-has-menu > a { padding-right: 0.95rem; }
+.nav-links .nav-has-menu > a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  opacity: 0.7;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 6px);
+  min-width: 270px;
+  margin-top: 1.1rem;
+  padding: 0.9rem 0;
+  list-style: none;
+  background: rgba(5, 7, 9, 0.97);
+  border: 1px solid rgba(201, 169, 110, 0.28);
+  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0.3s;
+  z-index: 110;
+}
+/* invisible bridge so the menu does not close while the pointer travels down */
+.nav-submenu::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -1.3rem;
+  height: 1.3rem;
+}
+.nav-has-menu:hover > .nav-submenu,
+.nav-has-menu:focus-within > .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.nav-submenu li { display: block; }
+.nav-links .nav-submenu a {
+  display: block;
+  padding: 0.7rem 1.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  white-space: nowrap;
+}
+.nav-links .nav-submenu a::after { display: none; }
+.nav-links .nav-submenu a:hover,
+.nav-links .nav-submenu a:focus-visible { color: var(--gold-bright); background: rgba(201, 169, 110, 0.06); }
+.nav-submenu .nav-sub-note {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-size: 0.92rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--vellum-aged);
+  opacity: 0.8;
+}
+
+.nav-links a[aria-current="page"],
+.nav-links .is-active > a { color: var(--gold); }
+
+.nav-links .nav-mobile-only { display: none; }
+
+@media (max-width: 960px) {
+  .nav-links .nav-mobile-only { display: block; }
+  .nav-links .nav-has-menu > a { padding-right: 0; }
+  .nav-links .nav-has-menu > a::before { display: none; }
+  .nav-submenu {
+    position: static;
+    transform: none;
+    min-width: 0;
+    margin: 0.4rem 0 0;
+    padding: 0 0 0 1.1rem;
+    border: 0;
+    border-left: 1px solid rgba(201, 169, 110, 0.3);
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-submenu::before { display: none; }
+  .nav-links .nav-submenu a { padding: 0.55rem 0; white-space: normal; }
+  .nav-submenu .nav-sub-note { display: none; }
+}
+
+/* ============================================
+   FOOTER FIX
+   main.css styles ".footer", but every page uses a plain <footer> element,
+   so the intended footer styling never applied (bulleted lists, plain headings).
+   These rules apply the same design to <footer>.
+   ============================================ */
+footer .footer-grid > div > p { color: var(--vellum-aged); font-size: 0.95rem; line-height: 1.7; max-width: 380px; }
+footer h5 {
+  font-family: var(--serif-display); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem;
+}
+footer .footer-grid ul { list-style: none; }
+footer .footer-grid ul li { padding: 0.4rem 0; }
+footer .footer-grid ul a { color: var(--vellum-aged); font-size: 0.95rem; font-style: italic; transition: color 0.3s; }
+footer .footer-grid ul a:hover { color: var(--gold-bright); }
+/* the small copyright line was #8b6f3d on near-black (4.26:1, just under WCAG AA); same gold family, now 5.14:1 */
+footer .footer-bottom p { color: #9a7c46; }
+/* mobile menu: the open panel let page text show through (pre-existing); make it solid */
+@media (max-width: 960px) {
+  .nav-links.mobile-open { background: #050709; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: 0 30px 40px -20px rgba(0,0,0,0.9); max-height: calc(100vh - 70px); overflow-y: auto; }
+}

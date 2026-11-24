@@ -1,0 +1,1002 @@
+{
+ "_readme": "Single content source for The Occult Archives. Edit this file, then upload it. Netlify runs scripts/build_archives.py on every deploy and regenerates the archive index pages, catalogue, related links and sitemap entries. See scripts/PUBLISHING-GUIDE.md.",
+ "images": {
+  "dee": {
+   "base": "john-dee-portrait-ashmolean",
+   "w": 2576,
+   "h": 2576,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "john-dee-portrait-ashmolean-og.jpg",
+   "alt": "Oil portrait of John Dee at sixty-seven: a long white beard, white ruff, black cap and fur-trimmed gown before a red curtain",
+   "credit": "Portrait of John Dee, unknown artist, c. 1594. Ashmolean Museum, Oxford. Public domain, via Wikimedia Commons.",
+   "source": "https://wikipedia.com/wiki/File:John_Dee_Ashmolean.jpg"
+  },
+  "kelley": {
+   "base": "edward-kelley-engraving-nga",
+   "w": 2523,
+   "h": 2576,
+   "sizes": [
+    640,
+    1280
+   ],
+   "alt": "Engraved portrait of Edward Kelley in a cap and fur-collared robe, holding an open book inscribed Trithemius, captioned Edw. Kelly, Prophet or Seer to Dr. Dee",
+   "credit": "Edward Kelley, Alchemist, Friend of Dr. John Dee. Engraving, unknown artist. National Gallery of Art, Washington, Rosenwald Collection. Public domain.",
+   "source": "https://www.nga.gov/artworks/40696-edward-kelley-alchemist-friend-dr-john-dee"
+  },
+  "prague": {
+   "base": "prague-castle-sadeler-1607",
+   "w": 2116,
+   "h": 1383,
+   "sizes": [
+    640,
+    1280
+   ],
+   "alt": "Engraved view of Prague Castle and St. Vitus Cathedral above the Lesser Town, with walls and vineyards in the foreground",
+   "credit": "Prague Castle and the Lesser Town, after the 1607 view by Aegidius Sadeler, reproduced by Jaroslav Kosina, 1900. Public domain, via Wikimedia Commons.",
+   "source": "https://Www.wikipedia.org/wiki/File:Praha_Hrad_1607.jpg"
+  },
+  "ring": {
+   "base": "phoenician-silver-ring-scarab-met",
+   "w": 2576,
+   "h": 1643,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "phoenician-silver-ring-scarab-met-og.jpg",
+   "alt": "An ancient silver ring with an engraved scarab seal, shown beside its separated hoop and a dark impression of the seal",
+   "label": "Comparable period object, not the Ring of Solomon",
+   "credit": "Silver pendant ring with scarab, Phoenician, 9th to 8th century BCE. The Metropolitan Museum of Art, The Cesnola Collection (74.51.4170). Public domain.",
+   "source": "https://www.metmuseum.org/art/collection/search/243583"
+  },
+  "temple": {
+   "base": "temple-of-solomon-engraving-wellcome",
+   "w": 2576,
+   "h": 1944,
+   "sizes": [
+    640,
+    1280
+   ],
+   "alt": "Engraved plate showing a reconstruction of the Temple of Solomon from above, with the Ark and cherubim, the altar of incense, the Tabernacle and the figure of Moses",
+   "label": "Artistic reconstruction",
+   "credit": "The Temple of Solomon, its grounds and some of its interiors. Engraving. Wellcome Collection. Public Domain Mark.",
+   "source": "https://wellcomecollection.org/works/qja5hw5f"
+  },
+  "walters": {
+   "base": "solomon-enthroned-walters-w631-1539",
+   "w": 1055,
+   "h": 1800,
+   "sizes": [
+    640,
+    1055
+   ],
+   "og": "solomon-enthroned-walters-w631-1539-og.jpg",
+   "alt": "Persian manuscript painting of King Solomon enthroned on a gold ground, surrounded by angels, demons, birds and beasts",
+   "credit": "King Solomon (Sulayman) enthroned, right side of a double-page frontispiece, Safavid Iran, 1539. Walters Art Museum, W.631. Creative Commons Zero.",
+   "source": "https://art.thewalters.org/object/W.631.2B/"
+  }
+ },
+ "chronicles": [
+  {
+   "slug": "john-dee-edward-kelley",
+   "url": "/occult-archives/john-dee-edward-kelley/",
+   "title": "When the Angels Demanded Their Wives",
+   "subtitle": "John Dee, Edward Kelley, and one of the most disturbing episodes in the history of ceremonial magic.",
+   "seoTitle": "John Dee & Edward Kelley: When Angels Demanded Their Wives",
+   "metaDescription": "In 1587, John Dee and Edward Kelley recorded an extraordinary angelic command to share their wives. Discover the disturbing history behind Enochian magic.",
+   "excerpt": "In 1587, one of England's most accomplished intellectuals received an extraordinary instruction from what he believed to be a heavenly messenger.",
+   "category": "Ceremonial Magic",
+   "tags": [
+    "Enochian Magic",
+    "Renaissance Magic",
+    "Alchemy",
+    "Hermeticism",
+    "Occult History"
+   ],
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "image": "dee",
+   "principles": [
+    "discernment",
+    "spiritual authority"
+   ],
+   "related": [
+    "ring-of-solomon"
+   ],
+   "about": [
+    {
+     "@type": "Person",
+     "name": "John Dee"
+    },
+    {
+     "@type": "Person",
+     "name": "Edward Kelley"
+    },
+    {
+     "@type": "Thing",
+     "name": "Enochian magic"
+    },
+    {
+     "@type": "Person",
+     "name": "Meric Casaubon"
+    },
+    {
+     "@type": "Person",
+     "name": "Rudolf II"
+    }
+   ],
+   "keywords": [
+    "John Dee",
+    "Edward Kelley",
+    "Enochian magic",
+    "cross-matching",
+    "1587",
+    "Madimi"
+   ],
+   "heroCaption": [
+    "Dr. John Dee (1527–1608/09)",
+    "English mathematician, astrologer, natural philosopher and ceremonial magician."
+   ]
+  }
+ ],
+ "artifacts": [
+  {
+   "number": 1,
+   "name": "The Ring of Solomon",
+   "slug": "ring-of-solomon",
+   "association": "Command over demons and spiritual intelligences",
+   "trailEnds": "After Solomon's reign, traditionally 10th century BCE; unknown",
+   "tradition": "Hebrew & Biblical",
+   "type": "Ring or jewel",
+   "collection": "lost",
+   "published": true,
+   "url": "/occult-archives/objects-of-power/ring-of-solomon/",
+   "title": "The Ring of Solomon",
+   "subtitle": "The lost instrument of divine authority.",
+   "seoTitle": "The Lost Ring of Solomon: Powers, Origins and Whereabouts",
+   "metaDescription": "Investigate the legendary Ring of Solomon, its supernatural powers, mysterious disappearance and the clues preserved in ancient texts.",
+   "excerpt": "Of all the treasures attributed to King Solomon, perhaps none was more valuable than a single ring.",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "image": "ring",
+   "period": "Circa 10th century BCE, according to traditional chronology",
+   "lastLocation": "Jerusalem",
+   "power": "Command over demons and spiritual intelligences",
+   "status": "Unrecovered",
+   "aliases": [
+    "Seal of Solomon",
+    "Ring of Sulayman"
+   ],
+   "dossier": [
+    [
+     "Known aliases",
+     "Seal of Solomon, Ring of Sulayman"
+    ],
+    [
+     "Estimated origin",
+     "10th century BCE, according to traditional chronology"
+    ],
+    [
+     "Last known possessor in legend",
+     "King Solomon"
+    ],
+    [
+     "Estimated disappearance",
+     "Unknown; no traceable succession after Solomon's reign"
+    ],
+    [
+     "Last referenced location",
+     "Jerusalem"
+    ],
+    [
+     "Material",
+     "A ring bearing an engraved precious stone, according to one account"
+    ],
+    [
+     "Alleged powers",
+     "Command over demons and spiritual intelligences"
+    ],
+    [
+     "Means of acquisition",
+     "Divine bestowal"
+    ]
+   ],
+   "statusLine": "Unrecovered · existence unverified",
+   "principles": [
+    "wisdom",
+    "divine authority"
+   ],
+   "related": [
+    "john-dee-edward-kelley"
+   ],
+   "services": [
+    {
+     "label": "Talismans & Amulets",
+     "url": "/services/talismans-and-amulets/",
+     "blurb": "The living tradition behind Solomonic seals and rings."
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Ring of Solomon"
+    },
+    {
+     "@type": "Person",
+     "name": "Solomon"
+    },
+    {
+     "@type": "Thing",
+     "name": "Testament of Solomon"
+    },
+    {
+     "@type": "Thing",
+     "name": "Asmodeus"
+    }
+   ],
+   "keywords": [
+    "Ring of Solomon",
+    "Seal of Solomon",
+    "Testament of Solomon",
+    "Ashmedai",
+    "Solomonic magic"
+   ]
+  },
+  {
+   "number": 2,
+   "name": "The Ark of the Covenant",
+   "slug": "ark-of-the-covenant",
+   "association": "Divine presence and miraculous power",
+   "trailEnds": "Possibly before or during the destruction of Jerusalem, 586 BCE",
+   "tradition": "Hebrew & Biblical",
+   "type": "Sacred vessel or relic",
+   "collection": "lost",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 3,
+   "name": "The Staff of Moses",
+   "slug": "staff-of-moses",
+   "association": "Miracles and command over natural forces",
+   "trailEnds": "Unknown; biblical period",
+   "tradition": "Hebrew & Biblical",
+   "type": "Staff or rod",
+   "collection": "lost",
+   "published": false
+  },
+  {
+   "number": 4,
+   "name": "The Rod of Aaron",
+   "slug": "rod-of-aaron",
+   "association": "Miraculous flowering and divine priestly authority",
+   "trailEnds": "Unknown; associated with the Ark",
+   "tradition": "Hebrew & Biblical",
+   "type": "Staff or rod",
+   "collection": "lost",
+   "published": false
+  },
+  {
+   "number": 5,
+   "name": "The Holy Grail",
+   "slug": "holy-grail",
+   "association": "Divine revelation, healing and spiritual attainment",
+   "trailEnds": "Unknown; medieval romances describe its withdrawal",
+   "tradition": "Arthurian",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 6,
+   "name": "Excalibur",
+   "slug": "excalibur",
+   "association": "Divine kingship and supernatural protection through its scabbard",
+   "trailEnds": "Legendary Arthurian period, 5th–6th century CE",
+   "tradition": "Arthurian",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 7,
+   "name": "The Philosopher's Stone",
+   "slug": "philosopher-s-stone",
+   "association": "Transmutation and perfection of nature",
+   "trailEnds": "No verified original specimen or disappearance",
+   "tradition": "Alchemical & Hermetic",
+   "type": "Stone",
+   "collection": "legend",
+   "published": false,
+   "note": "A concept rather than a single object"
+  },
+  {
+   "number": 8,
+   "name": "The Emerald Tablet",
+   "slug": "emerald-tablet",
+   "association": "Hidden knowledge of creation and transformation",
+   "trailEnds": "Original physical tablet unverified",
+   "tradition": "Alchemical & Hermetic",
+   "type": "Tablet or book",
+   "collection": "legend",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 9,
+   "name": "The Tablets of Destiny",
+   "slug": "tablets-of-destiny",
+   "association": "Authority over the cosmic order",
+   "trailEnds": "Mythological; no historical disappearance",
+   "tradition": "Mesopotamian",
+   "type": "Tablet or book",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 10,
+   "name": "The Book of Thoth",
+   "slug": "book-of-thoth",
+   "association": "Divine knowledge and magical understanding",
+   "trailEnds": "Unknown; ancient Egyptian literary tradition",
+   "tradition": "Egyptian",
+   "type": "Tablet or book",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 11,
+   "name": "The Palladium of Troy",
+   "slug": "palladium-of-troy",
+   "association": "Supernatural protection of the city possessing it",
+   "trailEnds": "Legendary fall of Troy, c. 12th century BCE; later traditions differ",
+   "tradition": "Greek",
+   "type": "Sacred vessel or relic",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 12,
+   "name": "Tyrfing",
+   "slug": "tyrfing",
+   "association": "A cursed sword demanding blood whenever drawn",
+   "trailEnds": "Unknown; Norse legendary tradition",
+   "tradition": "Norse & Germanic",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 13,
+   "name": "Gram",
+   "slug": "gram",
+   "association": "The dragon-slaying sword of Sigurd",
+   "trailEnds": "Unknown; Germanic heroic legend",
+   "tradition": "Norse & Germanic",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 14,
+   "name": "Gáe Bulg",
+   "slug": "g-e-bulg",
+   "association": "The supernatural spear of Cú Chulainn",
+   "trailEnds": "Unknown; Irish heroic tradition",
+   "tradition": "Irish & Welsh",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 15,
+   "name": "Mjölnir",
+   "slug": "mj-lnir",
+   "association": "Thunder, protection and divine consecration",
+   "trailEnds": "Mythological; prophesied to survive Ragnarök",
+   "tradition": "Norse & Germanic",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 16,
+   "name": "The Spear of Lugh",
+   "slug": "spear-of-lugh",
+   "association": "Supernatural victory in battle",
+   "trailEnds": "Unknown; Irish mythological tradition",
+   "tradition": "Irish & Welsh",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 17,
+   "name": "The Sword of Nuada",
+   "slug": "sword-of-nuada",
+   "association": "A sword from which no opponent could escape",
+   "trailEnds": "Unknown; Irish mythological tradition",
+   "tradition": "Irish & Welsh",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 18,
+   "name": "The Sword of Freyr",
+   "slug": "sword-of-freyr",
+   "association": "A sword capable of fighting independently",
+   "trailEnds": "Mythological; surrendered by Freyr",
+   "tradition": "Norse & Germanic",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 19,
+   "name": "The Ring of Gyges",
+   "slug": "ring-of-gyges",
+   "association": "Invisibility",
+   "trailEnds": "Unknown; ancient Greek philosophical legend",
+   "tradition": "Greek",
+   "type": "Ring or jewel",
+   "collection": "legend",
+   "published": true,
+   "note": "A philosophical parable in Plato's Republic",
+   "url": "/occult-archives/objects-of-power/ring-of-gyges/",
+   "format": "episode",
+   "title": "The Ring of Gyges",
+   "subtitle": "The first man we know to have worn it was already dead.",
+   "seoTitle": "The Ring of Gyges: Plato's Ring of Invisibility and Its Trail",
+   "metaDescription": "In Plato's Republic, a shepherd takes a gold ring from a corpse inside a bronze horse and learns to vanish. Follow the clues the story leaves behind.",
+   "excerpt": "An earthquake opens a fissure, a shepherd climbs down, and a gold ring comes off a dead man's hand.",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "period": "Written down in the 4th century BCE",
+   "lastLocation": "Lydia, western Anatolia (in the story)",
+   "power": "Invisibility",
+   "status": "Legendary Existence",
+   "dossier": [
+    [
+     "Source",
+     "Plato, Republic, Book II"
+    ],
+    [
+     "Found",
+     "Inside a hollow bronze horse, in a fissure opened by an earthquake"
+    ],
+    [
+     "Taken from",
+     "A corpse larger than an ordinary man"
+    ],
+    [
+     "Last holder in the story",
+     "A Lydian shepherd who seized the throne; Plato calls him an ancestor of Gyges"
+    ],
+    [
+     "Condition of use",
+     "Turn the setting inward to vanish; outward to return"
+    ],
+    [
+     "Disappearance",
+     "No date survives"
+    ]
+   ],
+   "statusLine": "Legendary existence",
+   "principles": [
+    "invisibility",
+    "character"
+   ],
+   "related": [
+    "ring-of-solomon"
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Ring of Gyges"
+    },
+    {
+     "@type": "Book",
+     "name": "Republic",
+     "author": {
+      "@type": "Person",
+      "name": "Plato"
+     }
+    },
+    {
+     "@type": "Person",
+     "name": "Gyges of Lydia"
+    }
+   ],
+   "keywords": [
+    "Ring of Gyges",
+    "Plato Republic",
+    "ring of invisibility",
+    "Gyges",
+    "Lydia"
+   ],
+   "ogCard": "ring-of-gyges-og.jpg"
+  },
+  {
+   "number": 20,
+   "name": "The Chintamani Stone",
+   "slug": "chintamani-stone",
+   "association": "Fulfillment of wishes and spiritual attainment",
+   "trailEnds": "Unknown; multiple religious traditions",
+   "tradition": "Hindu & Buddhist",
+   "type": "Stone",
+   "collection": "legend",
+   "published": false,
+   "note": "Described differently across traditions"
+  },
+  {
+   "number": 21,
+   "name": "Brísingamen",
+   "slug": "br-singamen",
+   "association": "Freyja's mysterious necklace of divine beauty",
+   "trailEnds": "Unknown; Norse mythology",
+   "tradition": "Norse & Germanic",
+   "type": "Ring or jewel",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 22,
+   "name": "Draupnir",
+   "slug": "draupnir",
+   "association": "A golden ring capable of multiplying itself",
+   "trailEnds": "Mythological; no final disappearance established",
+   "tradition": "Norse & Germanic",
+   "type": "Ring or jewel",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 23,
+   "name": "The Girdle of Aphrodite",
+   "slug": "girdle-of-aphrodite",
+   "association": "Irresistible attraction",
+   "trailEnds": "Unknown; Greek mythology",
+   "tradition": "Greek",
+   "type": "Garment or armour",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 24,
+   "name": "The Necklace of Harmonia",
+   "slug": "necklace-of-harmonia",
+   "association": "A divine ornament associated with inherited misfortune",
+   "trailEnds": "Unknown; ancient Greek legendary tradition",
+   "tradition": "Greek",
+   "type": "Ring or jewel",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 25,
+   "name": "The Syamantaka Jewel",
+   "slug": "syamantaka-jewel",
+   "association": "Prosperity and the supernatural production of gold",
+   "trailEnds": "Unknown; Hindu sacred tradition",
+   "tradition": "Hindu & Buddhist",
+   "type": "Ring or jewel",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 26,
+   "name": "The Cauldron of Cerridwen",
+   "slug": "cauldron-of-cerridwen",
+   "association": "Divine inspiration and transformative knowledge",
+   "trailEnds": "Unknown; Welsh legendary tradition",
+   "tradition": "Irish & Welsh",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 27,
+   "name": "The Cauldron of the Dagda",
+   "slug": "cauldron-of-the-dagda",
+   "association": "Inexhaustible nourishment",
+   "trailEnds": "Unknown; Irish mythological tradition",
+   "tradition": "Irish & Welsh",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 28,
+   "name": "The Cauldron of Rebirth",
+   "slug": "cauldron-of-rebirth",
+   "association": "Restoration of dead warriors to life",
+   "trailEnds": "Destroyed in the legendary conflict described in the Mabinogion",
+   "tradition": "Irish & Welsh",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 29,
+   "name": "The Golden Fleece",
+   "slug": "golden-fleece",
+   "association": "Divine favor and royal legitimacy",
+   "trailEnds": "Unknown; Greek heroic tradition",
+   "tradition": "Greek",
+   "type": "Garment or armour",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 30,
+   "name": "The Cup of Jamshid",
+   "slug": "cup-of-jamshid",
+   "association": "Supernatural vision of distant places and hidden events",
+   "trailEnds": "Unknown; Persian legendary tradition",
+   "tradition": "Persian",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 31,
+   "name": "The Helm of Hades",
+   "slug": "helm-of-hades",
+   "association": "Invisibility",
+   "trailEnds": "Unknown; Greek mythology",
+   "tradition": "Greek",
+   "type": "Garment or armour",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 32,
+   "name": "Gjallarhorn",
+   "slug": "gjallarhorn",
+   "association": "The horn whose sounding announces Ragnarök",
+   "trailEnds": "Mythological; no disappearance established",
+   "tradition": "Norse & Germanic",
+   "type": "Instrument",
+   "collection": "legend",
+   "published": false
+  },
+  {
+   "number": 33,
+   "name": "The Spear of Destiny",
+   "slug": "spear-of-destiny",
+   "association": "Divine favor and legendary military supremacy",
+   "trailEnds": "Original provenance disputed; several surviving claimants",
+   "tradition": "Christian",
+   "type": "Sword or spear",
+   "collection": "relic",
+   "published": false,
+   "featuredForthcoming": true
+  },
+  {
+   "number": 34,
+   "name": "Durandal",
+   "slug": "durandal",
+   "association": "An extraordinary sword containing sacred relics",
+   "trailEnds": "Associated with Roland's death in 778 CE; later claims disputed",
+   "tradition": "Frankish",
+   "type": "Sword or spear",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 35,
+   "name": "Kusanagi-no-Tsurugi",
+   "slug": "kusanagi-no-tsurugi",
+   "association": "Divine sovereignty and command over the wind",
+   "trailEnds": "Original and surviving imperial treasure traditions disputed",
+   "tradition": "Japanese",
+   "type": "Sword or spear",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 36,
+   "name": "The Lia Fáil",
+   "slug": "lia-f-il",
+   "association": "A stone said to recognize the rightful king",
+   "trailEnds": "Surviving stone traditionally identified at Tara; authenticity disputed",
+   "tradition": "Irish & Welsh",
+   "type": "Stone",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 37,
+   "name": "The Black Mirror of John Dee",
+   "slug": "black-mirror-of-john-dee",
+   "association": "Scrying and communication with spiritual intelligences",
+   "trailEnds": "Survives in the British Museum",
+   "tradition": "Elizabethan magic",
+   "type": "Instrument",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 38,
+   "name": "The Sigillum Dei Aemeth",
+   "slug": "sigillum-dei-aemeth",
+   "association": "A sacred instrument of angelic communication",
+   "trailEnds": "Surviving examples associated with John Dee",
+   "tradition": "Elizabethan magic",
+   "type": "Instrument",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 39,
+   "name": "The True Cross",
+   "slug": "true-cross",
+   "association": "Miraculous healing and divine protection",
+   "trailEnds": "Fragmented relic tradition; original integrity and provenance disputed",
+   "tradition": "Christian",
+   "type": "Sacred vessel or relic",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 40,
+   "name": "The Holy Prepuce",
+   "slug": "holy-prepuce",
+   "association": "A sacred relic associated with mystical claims",
+   "trailEnds": "Multiple historical claimants; Calcata relic disappeared in 1983",
+   "tradition": "Christian",
+   "type": "Sacred vessel or relic",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 41,
+   "name": "The Shroud of Turin",
+   "slug": "shroud-of-turin",
+   "association": "Alleged miraculous image and sacred provenance",
+   "trailEnds": "Survives in Turin; authenticity disputed",
+   "tradition": "Christian",
+   "type": "Sacred vessel or relic",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 42,
+   "name": "The Stone of Scone",
+   "slug": "stone-of-scone",
+   "association": "Sacred kingship and legendary biblical origins",
+   "trailEnds": "Surviving coronation stone; historical origins debated",
+   "tradition": "Scottish",
+   "type": "Stone",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 43,
+   "name": "The Gundestrup Cauldron",
+   "slug": "gundestrup-cauldron",
+   "association": "Mysterious religious imagery and ritual significance",
+   "trailEnds": "Recovered in Denmark in 1891",
+   "tradition": "Celtic",
+   "type": "Vessel or cauldron",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 44,
+   "name": "The Hope Diamond",
+   "slug": "hope-diamond",
+   "association": "A jewel surrounded by legends of a supernatural curse",
+   "trailEnds": "Survives in the Smithsonian Institution",
+   "tradition": "Gem lore",
+   "type": "Ring or jewel",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 45,
+   "name": "The Koh-i-Noor Diamond",
+   "slug": "koh-i-noor-diamond",
+   "association": "Sovereignty and legendary misfortune",
+   "trailEnds": "Survives among the British Crown Jewels",
+   "tradition": "Gem lore",
+   "type": "Ring or jewel",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 46,
+   "name": "The Black Orlov Diamond",
+   "slug": "black-orlov-diamond",
+   "association": "A jewel associated with alleged curses",
+   "trailEnds": "Surviving gemstone; legendary provenance disputed",
+   "tradition": "Gem lore",
+   "type": "Ring or jewel",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 47,
+   "name": "The Voynich Manuscript",
+   "slug": "voynich-manuscript",
+   "association": "Undeciphered writing and potentially hidden knowledge",
+   "trailEnds": "Survives at Yale University",
+   "tradition": "Unknown origin",
+   "type": "Tablet or book",
+   "collection": "relic",
+   "published": false
+  },
+  {
+   "number": 48,
+   "name": "The Golden Menorah of Jerusalem",
+   "slug": "golden-menorah-of-jerusalem",
+   "association": "The seven-branched golden lampstand of the Second Temple",
+   "trailEnds": "Uncertain in late antiquity; the sack of Rome in 455 CE",
+   "tradition": "Hebrew & Biblical",
+   "type": "Sacred vessel or relic",
+   "collection": "lost",
+   "published": true,
+   "url": "/occult-archives/objects-of-power/golden-menorah-of-jerusalem/",
+   "format": "episode",
+   "title": "The Golden Menorah of Jerusalem",
+   "subtitle": "Rome carved it in stone. The gold is another matter.",
+   "seoTitle": "The Golden Menorah of Jerusalem: Where Did the Temple Menorah Go?",
+   "metaDescription": "Carried through Rome and carved on the Arch of Titus, the Temple menorah then vanishes. Follow Josephus and Procopius to the last firm lead.",
+   "excerpt": "Rome carved it in stone. The gold is another matter.",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "period": "Carried from Jerusalem after 70 CE",
+   "lastLocation": "Temple of Peace, Rome",
+   "power": "The sacred lampstand of the Temple",
+   "status": "Whereabouts Unknown",
+   "dossier": [
+    [
+     "Object",
+     "The seven-branched golden lampstand of Jerusalem's Second Temple"
+    ],
+    [
+     "Taken",
+     "After the destruction of the Temple in 70 CE"
+    ],
+    [
+     "Witnesses",
+     "Josephus's account of the Roman triumph; the relief on the Arch of Titus"
+    ],
+    [
+     "Last specifically named location",
+     "Vespasian's Temple of Peace, Rome"
+    ],
+    [
+     "Trail goes cold",
+     "Late antiquity; the sack of Rome in 455 CE is the date to circle"
+    ],
+    [
+     "Possible later route",
+     "Carthage, Constantinople, Jerusalem (Procopius, who does not name the menorah)"
+    ]
+   ],
+   "statusLine": "Whereabouts unknown",
+   "principles": [
+    "sacred return"
+   ],
+   "related": [
+    "ring-of-solomon"
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Temple menorah"
+    },
+    {
+     "@type": "Place",
+     "name": "Arch of Titus"
+    },
+    {
+     "@type": "Person",
+     "name": "Josephus"
+    },
+    {
+     "@type": "Person",
+     "name": "Procopius"
+    }
+   ],
+   "keywords": [
+    "Temple menorah",
+    "Arch of Titus",
+    "Josephus",
+    "Procopius",
+    "Temple of Peace",
+    "Vandals"
+   ],
+   "ogCard": "golden-menorah-of-jerusalem-og.jpg"
+  },
+  {
+   "number": 49,
+   "name": "The Gaming Board of Gwenddoleu",
+   "slug": "gaming-board-of-gwenddoleu",
+   "association": "Silver men that play by themselves once set on the gold board",
+   "trailEnds": "Around 573 CE, the Battle of Arfderydd",
+   "tradition": "Irish & Welsh",
+   "type": "Instrument",
+   "collection": "legend",
+   "published": true,
+   "url": "/occult-archives/objects-of-power/gaming-board-of-gwenddoleu/",
+   "format": "episode",
+   "title": "The Gaming Board of Gwenddoleu",
+   "subtitle": "Set the silver men on the gold squares. Then take your hands away.",
+   "seoTitle": "The Gaming Board of Gwenddoleu: A Lost Treasure of Britain",
+   "metaDescription": "Gold squares, silver men and pieces that play by themselves. Trace the Gaming Board of Gwenddoleu, one of the Thirteen Treasures of Britain, to Arfderydd.",
+   "excerpt": "Set the silver men on the gold squares. Then take your hands away.",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "period": "Around 573 CE",
+   "lastLocation": "Near Arthuret, Cumbria (suspected)",
+   "power": "Pieces that play by themselves",
+   "status": "Legendary Existence",
+   "dossier": [
+    [
+     "Owner",
+     "Gwenddoleu son of Ceidio"
+    ],
+    [
+     "Listed among",
+     "The Thirteen Treasures of the Island of Britain"
+    ],
+    [
+     "Materials",
+     "A board of gold; playing pieces of silver"
+    ],
+    [
+     "Condition",
+     "Once the men are set on the board, they play by themselves"
+    ],
+    [
+     "Trail goes cold",
+     "Around 573 CE, with Gwenddoleu's death at the Battle of Arfderydd"
+    ],
+    [
+     "Last suspected region",
+     "The border country near Arthuret, present-day Cumbria"
+    ]
+   ],
+   "statusLine": "Legendary existence",
+   "principles": [
+    "condition of use"
+   ],
+   "related": [
+    "ring-of-gyges"
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Thirteen Treasures of the Island of Britain"
+    },
+    {
+     "@type": "Person",
+     "name": "Gwenddoleu ap Ceidio"
+    },
+    {
+     "@type": "Event",
+     "name": "Battle of Arfderydd"
+    }
+   ],
+   "keywords": [
+    "Thirteen Treasures of Britain",
+    "Gwenddoleu",
+    "gwyddbwyll",
+    "Battle of Arfderydd",
+    "Arthuret"
+   ],
+   "ogCard": "gaming-board-of-gwenddoleu-og.jpg"
+  }
+ ]
+}

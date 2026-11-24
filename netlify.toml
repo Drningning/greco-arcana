@@ -2,6 +2,10 @@
 
 [build]
   publish = "."
+  # Regenerates The Occult Archives (index pages, catalogue, related links, sitemap block)
+  # from occult-archives/_src/catalogue.json on every deploy. Standard-library Python only.
+  # If this ever fails, Netlify keeps the previous version of the site live.
+  command = "python3 scripts/build_archives.py"
 
 # Pretty URLs — these are the redirects for the new multi-page structure.
 # Netlify by default serves /services/banishing-rituals/index.html at the
@@ -211,6 +215,48 @@
 [[redirects]]
   from = "/writings"
   to = "/"
+  status = 301
+
+
+# --- The Occult Archives: pretty URLs ---
+[[redirects]]
+  from = "/occult-archives"
+  to = "/occult-archives/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/chronicles"
+  to = "/occult-archives/chronicles/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/objects-of-power"
+  to = "/occult-archives/objects-of-power/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/john-dee-edward-kelley"
+  to = "/occult-archives/john-dee-edward-kelley/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/objects-of-power/ring-of-solomon"
+  to = "/occult-archives/objects-of-power/ring-of-solomon/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/objects-of-power/ring-of-gyges"
+  to = "/occult-archives/objects-of-power/ring-of-gyges/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/objects-of-power/golden-menorah-of-jerusalem"
+  to = "/occult-archives/objects-of-power/golden-menorah-of-jerusalem/"
+  status = 301
+
+[[redirects]]
+  from = "/occult-archives/objects-of-power/gaming-board-of-gwenddoleu"
+  to = "/occult-archives/objects-of-power/gaming-board-of-gwenddoleu/"
   status = 301
 
 # Cache static assets aggressively
