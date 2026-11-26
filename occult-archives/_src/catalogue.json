@@ -79,6 +79,113 @@
    "alt": "Persian manuscript painting of King Solomon enthroned on a gold ground, surrounded by angels, demons, birds and beasts",
    "credit": "King Solomon (Sulayman) enthroned, right side of a double-page frontispiece, Safavid Iran, 1539. Walters Art Museum, W.631. Creative Commons Zero.",
    "source": "https://art.thewalters.org/object/W.631.2B/"
+  },
+  "grailproc": {
+   "base": "grail-procession-bnf-fr-12577",
+   "w": 2463,
+   "h": 1354,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "alt": "Medieval manuscript painting in two panels: on the left, attendants carry a draped object; on the right, a maiden bears the Grail into a hall where crowned figures sit at a laid table",
+   "credit": "The Grail procession, from a manuscript of Chrétien de Troyes's Perceval and its continuations, Paris, c. 1330. Bibliothèque nationale de France, MS français 12577, f. 74v. Public domain.",
+   "og": "grail-procession-bnf-fr-12577-og.jpg"
+  },
+  "percevalcastle": {
+   "base": "perceval-grail-castle-manuscript",
+   "w": 1402,
+   "h": 642,
+   "sizes": [
+    640,
+    1280,
+    1402
+   ],
+   "alt": "Manuscript painting in two panels: a knight on a white horse arrives at a blue castle tower, and a feast is served at a table attended by maidens",
+   "credit": "Perceval arrives at the Grail Castle, French illuminated manuscript of the Perceval romances, 14th century. Public domain."
+  },
+  "duncan": {
+   "base": "duncan-taking-of-excalibur-1897",
+   "w": 2387,
+   "h": 1641,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "alt": "Painting of pale, robed women at the edge of dark water; a hand rises from the lake holding a sword as a boat carries a wounded king",
+   "credit": "John Duncan, The Taking of Excalibur, 1897. Public domain.",
+   "og": "duncan-taking-of-excalibur-1897-og.jpg"
+  },
+  "pyle": {
+   "base": "pyle-excalibur-the-sword-1903",
+   "w": 1188,
+   "h": 1500,
+   "sizes": [
+    640,
+    1188
+   ],
+   "alt": "Pen-and-ink drawing of a sword held upright from the water by a hand, radiating light, beside a crowned figure in a boat",
+   "credit": "Howard Pyle, Excalibur the Sword, from The Story of King Arthur and His Knights, 1903. Public domain."
+  },
+  "beardsley": {
+   "base": "beardsley-lady-of-the-lake-excalibur",
+   "w": 680,
+   "h": 874,
+   "sizes": [
+    640,
+    680
+   ],
+   "alt": "Black-and-white illustration within a floral border: the Lady of the Lake raises her hand to the armoured Arthur and the robed Merlin in a woodland",
+   "credit": "Aubrey Beardsley, The Lady of the Lake Telleth Arthur of the Sword Excalibur, from Malory's Le Morte d'Arthur (J. M. Dent edition), 1893–94. Public domain."
+  },
+  "girflet": {
+   "base": "girflet-throws-excalibur-manuscript",
+   "w": 645,
+   "h": 811,
+   "sizes": [
+    640,
+    645
+   ],
+   "alt": "Manuscript painting of a young man in a blue tunic and red hose standing at a lake shore, sword in hand, with a walled city behind",
+   "credit": "Girflet at the lake with Excalibur, French illuminated manuscript of the Mort Artu, 15th century. In this French prose version the sword is returned by Girflet; in Malory it is Bedivere. Public domain."
+  },
+  "draper": {
+   "base": "draper-golden-fleece-1904",
+   "w": 1200,
+   "h": 732,
+   "sizes": [
+    640,
+    1200
+   ],
+   "alt": "Painting of Medea on the deck of the Argo, arm outstretched, as oarsmen strain and the golden fleece lies across the ship",
+   "credit": "Herbert James Draper, The Golden Fleece, 1904. Cartwright Hall Art Gallery, Bradford. Public domain.",
+   "og": "draper-golden-fleece-1904-og.jpg"
+  },
+  "boyvin": {
+   "base": "boyvin-thiry-jason-and-the-dragon-1563",
+   "w": 2576,
+   "h": 1753,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "alt": "Renaissance engraving within an ornate frame of figures and grotesques: Jason in armour confronts the dragon guarding the fleece",
+   "credit": "René Boyvin after Léonard Thiry, Jason confronting the dragon, from the Histoire de Jason, published 1563. The Metropolitan Museum of Art. Public domain."
+  },
+  "nolin": {
+   "base": "nolin-romanelli-jason-golden-fleece",
+   "w": 1766,
+   "h": 2576,
+   "sizes": [
+    640,
+    1280,
+    1766
+   ],
+   "alt": "Baroque engraving: an armoured Jason carries off the fleece between classical columns while putti fly overhead and the slain dragon lies at his feet",
+   "credit": "Jean Nolin after Francesco Romanelli, Jason taking the Golden Fleece, 17th century engraving. Public domain."
   }
  },
  "chronicles": [
@@ -249,6 +356,336 @@
   },
   {
    "number": 2,
+   "name": "The Holy Grail",
+   "slug": "holy-grail",
+   "association": "Divine revelation, healing and spiritual attainment",
+   "trailEnds": "Unknown; medieval romances describe its withdrawal",
+   "tradition": "Arthurian",
+   "type": "Vessel or cauldron",
+   "collection": "legend",
+   "published": true,
+   "title": "The Holy Grail",
+   "subtitle": "The treasure that cannot be attained by discovery alone.",
+   "seoTitle": "The Holy Grail: Origins, Whereabouts and Clues",
+   "metaDescription": "Perceval saw the Grail and said nothing. Trace the Holy Grail from Chrétien to Sarras, and the clues the medieval romances leave for its seekers.",
+   "excerpt": "What if the greatest treasure in the history of Western civilization was once placed directly before a man who failed to recognize how to attain it?",
+   "image": "grailproc",
+   "period": "First surviving Grail romance, circa 1180–1190",
+   "lastLocation": "Sarras, according to the Vulgate Grail Quest",
+   "power": "Healing, nourishment, divine revelation",
+   "status": "Unrecovered",
+   "statusLine": "Unrecovered · competing claimants",
+   "aliases": [
+    "San Graal",
+    "Sangreal"
+   ],
+   "dossier": [
+    [
+     "Known aliases",
+     "The Holy Grail, San Graal, Sangreal"
+    ],
+    [
+     "Traditional origin",
+     "First century CE, in Christianized accounts"
+    ],
+    [
+     "First surviving Grail romance",
+     "Circa 1180–1190"
+    ],
+    [
+     "Known possessors",
+     "Joseph of Arimathea, the Fisher King, Galahad"
+    ],
+    [
+     "Estimated disappearance",
+     "Unknown; the Arthurian age in later romances"
+    ],
+    [
+     "Last legendary location",
+     "Sarras, according to the Vulgate Grail Quest"
+    ],
+    [
+     "Alleged powers",
+     "Healing, nourishment, divine revelation"
+    ],
+    [
+     "Means of acquisition",
+     "A quest involving spiritual and moral qualifications"
+    ]
+   ],
+   "principles": [
+    "discernment",
+    "initiation"
+   ],
+   "related": [
+    "excalibur",
+    "ring-of-solomon",
+    "gaming-board-of-gwenddoleu"
+   ],
+   "services": [
+    {
+     "label": "Hermetic Tarot Reading",
+     "url": "/services/hermetic-tarot-reading/",
+     "blurb": "Learning to ask the right question is where every reading begins."
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Holy Grail"
+    },
+    {
+     "@type": "Person",
+     "name": "Chrétien de Troyes"
+    },
+    {
+     "@type": "Person",
+     "name": "Wolfram von Eschenbach"
+    },
+    {
+     "@type": "Thing",
+     "name": "Perceval"
+    }
+   ],
+   "keywords": [
+    "Holy Grail",
+    "Sangreal",
+    "Perceval",
+    "Fisher King",
+    "Galahad",
+    "Sarras",
+    "Grail quest"
+   ],
+   "url": "/occult-archives/objects-of-power/holy-grail/",
+   "datePublished": "2026-11-26",
+   "dateModified": "2026-11-26"
+  },
+  {
+   "number": 3,
+   "name": "Excalibur",
+   "slug": "excalibur",
+   "association": "Divine kingship and supernatural protection through its scabbard",
+   "trailEnds": "Legendary Arthurian period, 5th–6th century CE",
+   "tradition": "Arthurian",
+   "type": "Sword or spear",
+   "collection": "legend",
+   "published": true,
+   "title": "Excalibur",
+   "subtitle": "The sword that came from the waters.",
+   "seoTitle": "Excalibur: Where Is King Arthur's Sword?",
+   "metaDescription": "Excalibur came from a lake and was thrown back into one. Follow the sword and its more valuable scabbard through Geoffrey, Malory and the British lakes.",
+   "excerpt": "Somewhere in the waters of Britain, according to one of its most enduring legends, lies a sword that was never intended to remain in the possession of men.",
+   "image": "duncan",
+   "period": "Circa 5th–6th century CE, legendary chronology",
+   "lastLocation": "An unidentified body of water in Britain",
+   "power": "Extraordinary brilliance; protection from blood loss through its scabbard",
+   "status": "Unrecovered",
+   "statusLine": "Unrecovered · location disputed",
+   "aliases": [
+    "Caliburn",
+    "Caledfwlch"
+   ],
+   "dossier": [
+    [
+     "Known aliases",
+     "Excalibur, Caliburn, Caledfwlch"
+    ],
+    [
+     "Traditional origin",
+     "Arthurian Britain, circa 5th–6th century CE"
+    ],
+    [
+     "Material",
+     "Forged metal, with an extraordinary scabbard"
+    ],
+    [
+     "Legendary maker",
+     "Forged in Avalon, according to Geoffrey of Monmouth"
+    ],
+    [
+     "Original custodian",
+     "The Lady of the Lake, in Malory's account"
+    ],
+    [
+     "Last legendary possessor",
+     "Sir Bedivere"
+    ],
+    [
+     "Estimated disappearance",
+     "Circa 5th–6th century CE, legendary chronology"
+    ],
+    [
+     "Last reported location",
+     "An unidentified body of water in Britain"
+    ],
+    [
+     "Alleged powers",
+     "Extraordinary brilliance; protection from blood loss through its scabbard"
+    ],
+    [
+     "Means of acquisition",
+     "Bestowed by a supernatural custodian"
+    ]
+   ],
+   "principles": [
+    "sovereignty",
+    "the sword"
+   ],
+   "related": [
+    "holy-grail",
+    "ring-of-solomon"
+   ],
+   "services": [
+    {
+     "label": "Ceremonial Magic",
+     "url": "/services/ceremonial-magic/",
+     "blurb": "The sword as a working instrument of authority and boundary."
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Excalibur"
+    },
+    {
+     "@type": "Person",
+     "name": "King Arthur"
+    },
+    {
+     "@type": "Thing",
+     "name": "Lady of the Lake"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Malory"
+    }
+   ],
+   "keywords": [
+    "Excalibur",
+    "Caliburn",
+    "Caledfwlch",
+    "Lady of the Lake",
+    "Bedivere",
+    "Dozmary Pool",
+    "Arthur's sword"
+   ],
+   "url": "/occult-archives/objects-of-power/excalibur/",
+   "datePublished": "2026-11-26",
+   "dateModified": "2026-11-26"
+  },
+  {
+   "number": 4,
+   "name": "The Golden Fleece",
+   "slug": "golden-fleece",
+   "association": "Divine favor and royal legitimacy",
+   "trailEnds": "Unknown; Greek heroic tradition",
+   "tradition": "Greek",
+   "type": "Garment or armour",
+   "collection": "legend",
+   "published": true,
+   "title": "The Golden Fleece",
+   "subtitle": "The treasure guarded by a creature that never slept.",
+   "seoTitle": "The Golden Fleece: Colchis, Medea and Strabo's Clue",
+   "metaDescription": "Jason crossed the Black Sea for the Golden Fleece, and Strabo thought he knew where the legend came from. Follow the trail from Colchis to Iolcus.",
+   "excerpt": "Among the treasures of antiquity, few inspired an expedition as ambitious as the Golden Fleece.",
+   "image": "draper",
+   "period": "Greek heroic age, conventionally late Bronze Age",
+   "lastLocation": "Iolcus, Thessaly (last reported destination)",
+   "power": "Divine favor, royal legitimacy and supernatural radiance",
+   "status": "Unrecovered",
+   "statusLine": "Unrecovered · possible historical inspiration",
+   "aliases": [
+    "Chrysomallos' Fleece"
+   ],
+   "dossier": [
+    [
+     "Known aliases",
+     "The Golden Fleece, Chrysomallos' Fleece"
+    ],
+    [
+     "Traditional origin",
+     "Greek heroic age, conventionally late Bronze Age"
+    ],
+    [
+     "Material",
+     "The golden hide of a supernatural ram"
+    ],
+    [
+     "Original possessor",
+     "Phrixus"
+    ],
+    [
+     "Principal custodian",
+     "King Aeëtes of Colchis"
+    ],
+    [
+     "Last principal possessor",
+     "Jason"
+    ],
+    [
+     "Estimated disappearance",
+     "Unknown; following the Argonautic expedition in legend"
+    ],
+    [
+     "Last reported destination",
+     "Iolcus, Thessaly, Greece"
+    ],
+    [
+     "Alleged powers",
+     "Divine favor, royal legitimacy and supernatural radiance"
+    ],
+    [
+     "Means of acquisition",
+     "Completion of extraordinary trials with magical assistance"
+    ]
+   ],
+   "principles": [
+    "trial",
+    "alchemy"
+   ],
+   "related": [
+    "ring-of-gyges",
+    "holy-grail"
+   ],
+   "services": [
+    {
+     "label": "Talismans & Amulets",
+     "url": "/services/talismans-and-amulets/",
+     "blurb": "Drawing something already present in nature into a working object."
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Golden Fleece"
+    },
+    {
+     "@type": "Person",
+     "name": "Jason"
+    },
+    {
+     "@type": "Person",
+     "name": "Medea"
+    },
+    {
+     "@type": "Place",
+     "name": "Colchis"
+    }
+   ],
+   "keywords": [
+    "Golden Fleece",
+    "Jason and the Argonauts",
+    "Medea",
+    "Colchis",
+    "Argonautica",
+    "Strabo gold fleece"
+   ],
+   "url": "/occult-archives/objects-of-power/golden-fleece/",
+   "datePublished": "2026-11-26",
+   "dateModified": "2026-11-26"
+  },
+  {
+   "number": 5,
    "name": "The Ark of the Covenant",
    "slug": "ark-of-the-covenant",
    "association": "Divine presence and miraculous power",
@@ -260,7 +697,7 @@
    "featuredForthcoming": true
   },
   {
-   "number": 3,
+   "number": 6,
    "name": "The Staff of Moses",
    "slug": "staff-of-moses",
    "association": "Miracles and command over natural forces",
@@ -269,41 +706,6 @@
    "type": "Staff or rod",
    "collection": "lost",
    "published": false
-  },
-  {
-   "number": 4,
-   "name": "The Rod of Aaron",
-   "slug": "rod-of-aaron",
-   "association": "Miraculous flowering and divine priestly authority",
-   "trailEnds": "Unknown; associated with the Ark",
-   "tradition": "Hebrew & Biblical",
-   "type": "Staff or rod",
-   "collection": "lost",
-   "published": false
-  },
-  {
-   "number": 5,
-   "name": "The Holy Grail",
-   "slug": "holy-grail",
-   "association": "Divine revelation, healing and spiritual attainment",
-   "trailEnds": "Unknown; medieval romances describe its withdrawal",
-   "tradition": "Arthurian",
-   "type": "Vessel or cauldron",
-   "collection": "legend",
-   "published": false,
-   "featuredForthcoming": true
-  },
-  {
-   "number": 6,
-   "name": "Excalibur",
-   "slug": "excalibur",
-   "association": "Divine kingship and supernatural protection through its scabbard",
-   "trailEnds": "Legendary Arthurian period, 5th–6th century CE",
-   "tradition": "Arthurian",
-   "type": "Sword or spear",
-   "collection": "legend",
-   "published": false,
-   "featuredForthcoming": true
   },
   {
    "number": 7,
@@ -626,13 +1028,13 @@
   },
   {
    "number": 29,
-   "name": "The Golden Fleece",
-   "slug": "golden-fleece",
-   "association": "Divine favor and royal legitimacy",
-   "trailEnds": "Unknown; Greek heroic tradition",
-   "tradition": "Greek",
-   "type": "Garment or armour",
-   "collection": "legend",
+   "name": "The Rod of Aaron",
+   "slug": "rod-of-aaron",
+   "association": "Miraculous flowering and divine priestly authority",
+   "trailEnds": "Unknown; associated with the Ark",
+   "tradition": "Hebrew & Biblical",
+   "type": "Staff or rod",
+   "collection": "lost",
    "published": false
   },
   {
