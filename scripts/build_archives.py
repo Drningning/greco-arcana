@@ -21,7 +21,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "occult-archives", "_src")
 SITE = "https://grecoarcana.com"
 IMG = "/assets/img/archives/"
-CSS = ["/assets/css/main.css", "/assets/css/nav-v1.css", "/assets/css/archives-v1.css"]
+CSS = ["/assets/css/main.css", "/assets/css/nav-v1.css", "/assets/css/archives-v2.css"]
 JS = "/assets/js/archives-v1.js"
 CHRONICLES_INDEX_MIN = 3   # the Chronicles hub stays noindex until it lists this many articles
 
@@ -247,6 +247,8 @@ class Images:
         im = self.reg[key]
         load = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
         c = f' class="{cls}"' if cls else ""
+        if im.get("focus"):
+            c += f' style="object-position:{im["focus"]}"'
         return (f'<img{c} src="{self.src(key)}" srcset="{self.srcset(key)}" sizes="{sizes}" '
                 f'width="{im["w"]}" height="{im["h"]}" alt="{e(im["alt"])}" {load}>')
 
@@ -312,7 +314,7 @@ def load():
     with open(os.path.join(SRC, "catalogue.json"), encoding="utf-8") as f:
         data = json.load(f)
     imgs = Images(data["images"])
-    chron = sorted([c for c in data["chronicles"]], key=lambda c: c["datePublished"], reverse=True)
+    chron = sorted([c for c in data["chronicles"]], key=lambda c: (c["datePublished"], c.get("episode", "")), reverse=True)
     for c in chron:
         c["kind"] = "chronicle"
         with open(os.path.join(SRC, "chronicles", c["slug"] + ".html"), encoding="utf-8") as f:
@@ -351,14 +353,25 @@ def related_for(item, chron, arts, limit=3):
     return out[:limit]
 
 
+def thumb(x, imgs, sizes="(min-width: 960px) 360px, 100vw"):
+    """Thumbnail for any published item; an archive plate if it has no image yet."""
+    if x.get("image"):
+        return f'<span class="ga-media ga-rel-media">{imgs.img(x["image"], sizes)}</span>'
+    return f'<span class="ga-media ga-rel-media ga-rel-plate" aria-hidden="true">{LOZENGE}</span>'
+
+
 def rel_card(x, imgs):
     if x["kind"] == "chronicle":
-        label = f"Chronicles of the Occult · {x['category']}"
-        desc = x["subtitle"]
+        ep = f"Episode {x['episode']} · " if x.get("episode") else ""
+        if x.get("period") and (x.get("cardTradition") or x.get("tradition")):
+            label = f"Chronicles of the Occult · {ep}{x['period']} · {x.get('cardTradition') or x['tradition']}"
+        else:
+            label = f"Chronicles of the Occult · {ep}{x['category']}"
+        desc = x.get("theme") or x["subtitle"]
     else:
         label = f"Objects of Power · No. {x['num']}"
         desc = x["subtitle"]
-    return (f'<a class="ga-rel" href="{x["url"]}"><span class="ga-mono">{e(label)}</span>'
+    return (f'<a class="ga-rel" href="{x["url"]}">{thumb(x, imgs)}<span class="ga-mono">{e(label)}</span>'
             f'<strong>{e(x["title"])}</strong><span class="ga-desc">{e(desc)}</span></a>')
 
 
@@ -409,6 +422,13 @@ def toc(body):
 
 
 # ---------------------------------------------------------------- article pages
+def chronicle_facts(c):
+    rows = [(k, c.get(f)) for k, f in (("Period", "period"), ("Location", "location"), ("Esoteric tradition", "tradition")) if c.get(f)]
+    if not rows:
+        return ""
+    return '<dl class="ga-facts">' + "".join(f"<div><dt>{k}</dt><dd>{e(v)}</dd></div>" for k, v in rows) + "</dl>"
+
+
 def build_chronicle(c, chron, arts, imgs):
     path = c["url"]
     trail = [("Home", "/"), ("The Occult Archives", "/occult-archives/"), ("Chronicles of the Occult", "/occult-archives/chronicles/"), (c["title"], path)]
@@ -429,9 +449,10 @@ def build_chronicle(c, chron, arts, imgs):
   <div class="container">
     {crumbs(trail)}
     <div class="ga-hero-head">
-      <p class="ga-kicker">Chronicles of the Occult · {e(c["category"])}</p>
+      <p class="ga-kicker">Chronicles of the Occult{(" · Episode " + e(c["episode"])) if c.get("episode") else ""} · {e(c["category"])}</p>
       <h1>{e(c["title"])}</h1>
       <p class="ga-subtitle">{e(c["subtitle"])}</p>
+      {chronicle_facts(c)}
       <p class="ga-byline">By <a href="#about-the-author" rel="author">Joseph Greco</a><span class="sep">·</span><time datetime="{c["datePublished"]}">{nicedate(c["datePublished"])}</time><span class="sep">·</span>{c["minutes"]} min read</p>
     </div>
   </div>
@@ -528,16 +549,16 @@ def chronicle_card(c, imgs, big=False):
         return f'''<article class="ga-feature">
   <a href="{c["url"]}" tabindex="-1" aria-hidden="true"><span class="ga-media">{imgs.img(c["image"], "(min-width: 960px) 640px, 100vw")}</span></a>
   <div>
-    <p class="ga-card-cat">{e(c["category"])}</p>
+    <p class="ga-card-cat">{("Episode " + e(c["episode"]) + " · ") if c.get("episode") else ""}{e(c["category"])}</p>
     <h3 class="ga-card-title"><a href="{c["url"]}">{e(c["title"])}</a></h3>
-    <p class="ga-card-desc">{e(c["subtitle"])}</p>
+    <p class="ga-card-desc">{e(c.get("excerpt") or c["subtitle"])}</p>
     <p class="ga-card-meta">By Joseph Greco · {c["minutes"]} min read</p>
     <a class="ga-link" href="{c["url"]}" aria-label="Read {e(c["title"])}">Read the chronicle</a>
   </div>
 </article>'''
     return f'''<article class="ga-card">
   <a href="{c["url"]}" tabindex="-1" aria-hidden="true"><span class="ga-media">{imgs.img(c["image"], "(min-width: 960px) 380px, 100vw")}</span></a>
-  <p class="ga-card-cat">{e(c["category"])}</p>
+  <p class="ga-card-cat">{("Episode " + e(c["episode"]) + " · ") if c.get("episode") else ""}{e(c["category"])}</p>
   <h3 class="ga-card-title"><a href="{c["url"]}">{e(c["title"])}</a></h3>
   <p class="ga-card-desc">{e(c["subtitle"])}</p>
   <p class="ga-card-meta">{c["minutes"]} min read</p>

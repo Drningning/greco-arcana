@@ -1,14 +1,18 @@
-GRECO ARCANA: UPDATE OF 26 NOVEMBER 2026
-New Objects of Power dossiers: No. 002 The Holy Grail, No. 003 Excalibur, No. 004 The Golden Fleece
+GRECO ARCANA: UPDATE OF 27 NOVEMBER 2026
 
 HOW TO UPLOAD
-1. Open this folder (update-2026-11-26) and press Cmd+A to select everything INSIDE it.
+1. Open this folder (update-2026-11-27) and press Cmd+A to select everything INSIDE it.
 2. In GitHub: Add file > Upload files, and drag the selection onto the page.
-3. Wait until all 42 files are listed, then click Commit changes.
-GitHub puts each file in the right place and replaces older versions. Nothing else on the site changes.
+3. Wait until all 75 files are listed, then click Commit changes.
 
 WHAT'S INCLUDED
-- 3 new dossier pages with the numbered parchment clue cards (the Ring of Solomon format)
-- 26 new images (9 pictures in web sizes, plus 3 social-sharing crops)
-- The updated catalogue: Grail, Excalibur and Fleece are now 002-004; the Ark is 005, the Staff of Moses 006 and the Rod of Aaron 029
-- Every existing archive page and the sitemap, regenerated so links and "The Search Continues" include the new dossiers
+- Chronicles of the Occult, Episode 002: The Astrologer in the White House
+  /occult-archives/chronicles/white-house-astrologer/
+- Chronicles of the Occult, Episode 003: The Rocket Scientist Who Invoked a Goddess
+  /occult-archives/chronicles/jack-parsons-babalon-working/
+- The three chronicles now link to one another (year, tradition and theme on each card)
+- Pictures for the Ring of Gyges, the Golden Menorah and the Gaming Board of Gwenddoleu
+- Thumbnail pictures on every article card on the Objects of Power and Chronicles pages
+- Silver Temple: the top-left logo now goes to the Greco Arcana home page on every
+  Silver Temple page, and the lineage paragraph is replaced
+- A new stylesheet (archives-v2.css). The old one stays in place; nothing to delete.
