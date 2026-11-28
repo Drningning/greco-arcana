@@ -331,6 +331,93 @@
    "alt": "Renaissance painting: a shepherd ducks into the side of a golden horse while shepherds, women and sheep look on and a bearded god pours rain from a cloud",
    "credit": "The story of the Ring of Gyges, Ferrarese school, 16th century. Public domain.",
    "og": "ring-of-gyges-ferrara-painting-og.jpg"
+  },
+  "cagliostro": {
+   "base": "count-alessandro-di-cagliostro",
+   "w": 931,
+   "h": 923,
+   "sizes": [
+    640,
+    931
+   ],
+   "og": "count-alessandro-di-cagliostro-og.jpg",
+   "alt": "Eighteenth-century engraved portrait of Cagliostro in a circular frame, looking upward, in an open-collared shirt and fur-trimmed coat",
+   "credit": "Count Alessandro di Cagliostro, eighteenth-century engraved portrait. Public domain (18th-century engraving)."
+  },
+  "lorenza": {
+   "base": "lorenza-feliciani",
+   "w": 861,
+   "h": 855,
+   "sizes": [
+    640,
+    861
+   ],
+   "og": "lorenza-feliciani-og.jpg",
+   "alt": "Eighteenth-century engraved portrait of a woman in a lace cap within a circular frame",
+   "credit": "Lorenza Feliciani, Cagliostro's wife, eighteenth-century engraved portrait. Public domain (18th-century engraving)."
+  },
+  "necklace": {
+   "base": "the-diamond-necklace",
+   "w": 2907,
+   "h": 3684,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "the-diamond-necklace-og.jpg",
+   "alt": "Engraving of an elaborate diamond necklace with festoons and long tasselled pendants",
+   "credit": "The diamond necklace of Böhmer and Bassenge, eighteenth-century engraving. Public domain (18th-century engraving)."
+  },
+  "shahnameh-folio": {
+   "base": "folio-from-a-manuscript-of-ferdowsis-shahnameh",
+   "w": 2415,
+   "h": 3860,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "folio-from-a-manuscript-of-ferdowsis-shahnameh-og.jpg",
+   "alt": "Persian manuscript painting with a figure in a dark pit at the center and attendants around it, framed by text panels",
+   "credit": "A folio from a Persian manuscript of Ferdowsi's Shahnameh. The figure in the pit recalls the episode in which Kay Khosrow finds the imprisoned Bizhan through the world-revealing cup. Public domain (historical manuscript); supplied as an open-access museum image."
+  },
+  "astro-bowl": {
+   "base": "bowl-with-courtly-and-astrological-motifs",
+   "w": 2995,
+   "h": 4000,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "bowl-with-courtly-and-astrological-motifs-og.jpg",
+   "alt": "Medieval Iranian ceramic bowl painted with a central figure surrounded by a ring of seated figures and planetary motifs",
+   "credit": "An Iranian ceramic bowl painted with courtly and astrological figures. Persian vessels could carry the image of the ordered heavens, as the cup of Jamshid was said to. Public domain (medieval object; open-access museum photograph)."
+  },
+  "hafez-cup": {
+   "base": "hafez-gazing-into-the-cup-of-jamshid",
+   "w": 275,
+   "h": 364,
+   "sizes": [
+    275
+   ],
+   "og": "hafez-gazing-into-the-cup-of-jamshid-og.jpg",
+   "alt": "Persian miniature of a gathering of figures around a poet holding a cup, with lines of text above",
+   "credit": "Hafez gazing into the cup of Jamshid, Persian miniature (low-resolution source). Public domain."
+  },
+  "cagliostro-banner": {
+   "base": "cagliostro-engraved-portrait-banner",
+   "w": 1920,
+   "h": 823,
+   "sizes": [
+    640,
+    1280,
+    1920
+   ],
+   "og": "cagliostro-engraved-portrait-banner-og.jpg",
+   "alt": "Eighteenth-century engraved portrait of Cagliostro in a circular frame, looking upward, in an open-collared shirt and fur-trimmed coat",
+   "credit": "Count Alessandro di Cagliostro, eighteenth-century engraved portrait. Public domain (18th-century engraving)."
   }
  },
  "chronicles": [
@@ -399,7 +486,17 @@
    "episode": "001",
    "theme": "When spiritual communications conflict with human judgment.",
    "period": "1587",
-   "tradition": "Enochian Magic"
+   "tradition": "Enochian Magic",
+   "studies": [
+    {
+     "stage": "science-of-correspondence",
+     "why": "Dee owned and studied Agrippa; his angelic work rests on the Renaissance philosophy of correspondence."
+    },
+    {
+     "stage": "sacred-art",
+     "why": "Enochian magic is one of the currents that converge in modern ceremonial magic."
+    }
+   ]
   },
   {
    "slug": "white-house-astrologer",
@@ -463,6 +560,16 @@
    "heroCaption": [
     "Ronald and Nancy Reagan",
     "The First Lady consulted the San Francisco astrologer Joan Quigley from 1981 until the arrangement became public in 1988."
+   ],
+   "studies": [
+    {
+     "stage": "hidden-virtues-of-nature",
+     "why": "Electional astrology, the choice of favorable times, is studied in Stage IV."
+    },
+    {
+     "stage": "science-of-correspondence",
+     "why": "The philosophy that gives astrology its meaning: as above, so below."
+    }
    ]
   },
   {
@@ -533,6 +640,97 @@
    "heroCaption": [
     "John Whiteside “Jack” Parsons (1914–1952)",
     "Rocket propulsion pioneer, co-founder of Aerojet and member of the Agape Lodge of the Ordo Templi Orientis."
+   ],
+   "studies": [
+    {
+     "stage": "sacred-art",
+     "why": "Parsons worked within Crowley's Thelema, one of the modern ceremonial currents traced in Stage VII."
+    }
+   ]
+  },
+  {
+   "slug": "cagliostro-egyptian-freemasonry",
+   "url": "/occult-archives/chronicles/cagliostro-egyptian-freemasonry/",
+   "episode": "004",
+   "title": "The Magician Who Stood Trial Before the French Monarchy",
+   "subtitle": "Count Cagliostro, Egyptian Freemasonry and the Affair of the Diamond Necklace.",
+   "seoTitle": "Cagliostro, Egyptian Freemasonry and the Diamond Necklace Affair",
+   "metaDescription": "In 1785 the magician Count Cagliostro was imprisoned in the Bastille over the Diamond Necklace Affair. The story of his trial, his Egyptian Rite and his legacy.",
+   "excerpt": "In 1785, one of Europe's most celebrated magicians was imprisoned in the Bastille over a diamond necklace that the Queen of France had never purchased.",
+   "category": "Freemasonry",
+   "tags": [
+    "Cagliostro",
+    "Egyptian Freemasonry",
+    "Diamond Necklace Affair",
+    "Marie Antoinette",
+    "Occult History"
+   ],
+   "period": "1785–1786",
+   "location": "Paris",
+   "tradition": "Egyptian Freemasonry",
+   "cardTradition": "Egyptian Freemasonry",
+   "theme": "When reputation and evidence must be judged separately.",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "image": "cagliostro-banner",
+   "principles": [
+    "discernment",
+    "initiation"
+   ],
+   "related": [
+    "john-dee-edward-kelley",
+    "holy-grail",
+    "jack-parsons-babalon-working"
+   ],
+   "about": [
+    {
+     "@type": "Person",
+     "name": "Alessandro di Cagliostro"
+    },
+    {
+     "@type": "Person",
+     "name": "Lorenza Feliciani"
+    },
+    {
+     "@type": "Person",
+     "name": "Jeanne de Valois-Saint-Rémy"
+    },
+    {
+     "@type": "Person",
+     "name": "Louis René Édouard de Rohan"
+    },
+    {
+     "@type": "Thing",
+     "name": "Affair of the Diamond Necklace"
+    },
+    {
+     "@type": "Thing",
+     "name": "Egyptian Rite of Freemasonry"
+    }
+   ],
+   "keywords": [
+    "Cagliostro",
+    "Count Cagliostro",
+    "Egyptian Rite",
+    "Egyptian Freemasonry",
+    "Affair of the Diamond Necklace",
+    "Bastille",
+    "Giuseppe Balsamo"
+   ],
+   "heroCaption": [
+    "Count Alessandro di Cagliostro (1743–1795)",
+    "Alchemist, healer and founder of the Egyptian Rite of Freemasonry."
+   ],
+   "video": "wMtWjgZMOsg",
+   "studies": [
+    {
+     "stage": "gate-of-light",
+     "why": "Cagliostro's Egyptian Rite raises the first question of the curriculum: what initiation is for, and how symbol and allegory teach."
+    },
+    {
+     "stage": "mystery-of-regeneration",
+     "why": "His promise of physical and spiritual regeneration drew on the alchemical and Rosicrucian currents studied in Stage VI."
+    }
    ]
   }
  ],
@@ -637,6 +835,20 @@
     "Testament of Solomon",
     "Ashmedai",
     "Solomonic magic"
+   ],
+   "studies": [
+    {
+     "stage": "hidden-virtues-of-nature",
+     "why": "Seals and rings belong to the tradition of talismanic magic."
+    },
+    {
+     "stage": "tree-of-life",
+     "why": "The divine names that give a seal its authority."
+    },
+    {
+     "stage": "sacred-art",
+     "why": "The Solomonic tradition of spiritual authority in ceremonial magic."
+    }
    ]
   },
   {
@@ -743,7 +955,18 @@
    ],
    "url": "/occult-archives/objects-of-power/holy-grail/",
    "datePublished": "2026-11-26",
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-26",
+   "studies": [
+    {
+     "stage": "mystery-of-regeneration",
+     "why": "The Grail quest as a story of transformation, read beside alchemy and the Rosicrucian manifestos."
+    },
+    {
+     "stage": "lost-word",
+     "why": "The Grail, the Stone and the Lost Word as three images of one search."
+    }
+   ],
+   "video": "wx08eQEeRs4"
   },
   {
    "number": 3,
@@ -967,7 +1190,13 @@
    ],
    "url": "/occult-archives/objects-of-power/golden-fleece/",
    "datePublished": "2026-11-26",
-   "dateModified": "2026-11-26"
+   "dateModified": "2026-11-26",
+   "studies": [
+    {
+     "stage": "mystery-of-regeneration",
+     "why": "Renaissance alchemists read the Golden Fleece as an allegory of the Great Work."
+    }
+   ]
   },
   {
    "number": 5,
@@ -1210,7 +1439,13 @@
     "Lydia"
    ],
    "ogCard": "ring-of-gyges-og.jpg",
-   "image": "gygesferrara"
+   "image": "gygesferrara",
+   "studies": [
+    {
+     "stage": "nature-of-reality",
+     "why": "The ring comes from Plato's Republic, where it tests justice and the soul."
+    }
+   ]
   },
   {
    "number": 20,
@@ -1332,8 +1567,140 @@
    "tradition": "Persian",
    "type": "Vessel or cauldron",
    "collection": "legend",
-   "published": false,
-   "featuredForthcoming": true
+   "published": true,
+   "featuredForthcoming": false,
+   "url": "/occult-archives/objects-of-power/cup-of-jamshid/",
+   "format": "dossier",
+   "title": "The Cup of Jamshid",
+   "subtitle": "The lost vessel through which kings could behold the world.",
+   "seoTitle": "The Cup of Jamshid: Persia's World-Revealing Cup and Its Trail",
+   "metaDescription": "The Jām-e Jam, the Persian cup in which kings beheld the world: its legend, the turquoise vessel of Istakhr, five clues and the mystical reading of Hafez.",
+   "excerpt": "A cup into which a king could gaze and see what was happening anywhere in the world.",
+   "datePublished": "2026-11-28",
+   "dateModified": "2026-11-28",
+   "period": "Mythological antiquity; Shahnameh completed c. 1010 CE",
+   "lastLocation": "Istakhr, Iran",
+   "power": "Supernatural vision",
+   "status": "Unrecovered",
+   "statusLine": "Unrecovered · legendary",
+   "aliases": [
+    "Jām-e Jam",
+    "Jām-e Giti-Nama",
+    "The World-Revealing Cup"
+   ],
+   "dossier": [
+    [
+     "Alternative names",
+     "Jām-e Jam, Jām-e Giti-Nama, World-Revealing Cup"
+    ],
+    [
+     "Estimated origin",
+     "Mythological antiquity"
+    ],
+    [
+     "Earliest major literary account",
+     "Ferdowsi's Shahnameh, completed around 1010 CE"
+    ],
+    [
+     "Physical description",
+     "A vessel associated in later traditions with seven divisions, markings or celestial regions"
+    ],
+    [
+     "Material",
+     "Uncertain; some later accounts associate it with turquoise"
+    ],
+    [
+     "Legendary possessors",
+     "Jamshid and Kay Khosrow"
+    ],
+    [
+     "Attributed powers",
+     "Revealing distant events, hidden knowledge and, in later accounts, future occurrences"
+    ],
+    [
+     "Last suspected location",
+     "Istakhr, Iran, according to a medieval discovery tradition"
+    ],
+    [
+     "Possible last historical claimant",
+     "Seljuk Sultan Alp Arslan"
+    ],
+    [
+     "Approximate disappearance",
+     "Unknown; a purported discovery was associated with the eleventh century"
+    ],
+    [
+     "Present status",
+     "Unrecovered; physical existence unverified"
+    ]
+   ],
+   "principles": [
+    "perception",
+    "sovereignty"
+   ],
+   "related": [
+    "holy-grail",
+    "ring-of-solomon",
+    "ring-of-gyges"
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Cup of Jamshid"
+    },
+    {
+     "@type": "Person",
+     "name": "Jamshid"
+    },
+    {
+     "@type": "Person",
+     "name": "Kay Khosrow"
+    },
+    {
+     "@type": "Book",
+     "name": "Shahnameh",
+     "author": {
+      "@type": "Person",
+      "name": "Ferdowsi"
+     }
+    },
+    {
+     "@type": "Person",
+     "name": "Hafez"
+    }
+   ],
+   "keywords": [
+    "Cup of Jamshid",
+    "Jam-e Jam",
+    "world-revealing cup",
+    "Shahnameh",
+    "Kay Khosrow",
+    "Hafez",
+    "Istakhr"
+   ],
+   "image": "shahnameh-folio",
+   "video": "WxWFyuKFz6Y",
+   "services": [
+    {
+     "label": "Hermetic Tarot Reading",
+     "url": "/services/hermetic-tarot-reading/",
+     "blurb": "Divination as the disciplined reading of correspondences."
+    }
+   ],
+   "studies": [
+    {
+     "stage": "science-of-correspondence",
+     "why": "A vessel that mirrors the universe is an image of macrocosm and microcosm, the core doctrine of Hermetic correspondence."
+    },
+    {
+     "stage": "hidden-virtues-of-nature",
+     "why": "The cup's seven divisions recall the seven classical planets and the traditional astrology of times and beginnings."
+    },
+    {
+     "stage": "language-of-the-mysteries",
+     "why": "Magical perception and divination: how a symbolic instrument is read rather than merely looked into."
+    }
+   ]
   },
   {
    "number": 31,
@@ -1606,7 +1973,17 @@
     "Vandals"
    ],
    "ogCard": "golden-menorah-of-jerusalem-og.jpg",
-   "image": "titusfrieze"
+   "image": "titusfrieze",
+   "studies": [
+    {
+     "stage": "gate-of-light",
+     "why": "The Temple of Jerusalem is the setting of the Craft's allegory."
+    },
+    {
+     "stage": "hidden-virtues-of-nature",
+     "why": "Ancient writers compared the seven lamps with the seven planets."
+    }
+   ]
   },
   {
    "number": 49,

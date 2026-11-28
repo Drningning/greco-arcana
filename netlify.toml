@@ -5,7 +5,8 @@
   # Regenerates The Occult Archives (index pages, catalogue, related links, sitemap block)
   # from occult-archives/_src/catalogue.json on every deploy. Standard-library Python only.
   # If this ever fails, Netlify keeps the previous version of the site live.
-  command = "python3 scripts/build_archives.py"
+  # Then builds The Solitary Study from solitary-study/_src/study.json (its pages and sitemap block).
+  command = "python3 scripts/build_archives.py && python3 scripts/build_study.py"
 
 # Pretty URLs — these are the redirects for the new multi-page structure.
 # Netlify by default serves /services/banishing-rituals/index.html at the

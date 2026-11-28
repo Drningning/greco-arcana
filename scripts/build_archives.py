@@ -21,7 +21,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "occult-archives", "_src")
 SITE = "https://grecoarcana.com"
 IMG = "/assets/img/archives/"
-CSS = ["/assets/css/main.css", "/assets/css/nav-v1.css", "/assets/css/archives-v2.css"]
+CSS = ["/assets/css/main.css", "/assets/css/nav-v2.css", "/assets/css/archives-v2.css"]
+NAV_JS = "/assets/js/nav-v2.js"
 JS = "/assets/js/archives-v1.js"
 CHRONICLES_INDEX_MIN = 3   # the Chronicles hub stays noindex until it lists this many articles
 
@@ -68,11 +69,14 @@ BRAND_SVG = '''<svg class="brand-mark" viewBox="0 0 100 100" fill="none" stroke=
       </svg>'''
 
 
-def nav_html(active="library", current=None):
-    """The site navigation. scripts/update_nav.py writes this same markup into every other page."""
+def nav_html(active="investigations", current=None):
+    """The site navigation. scripts/update_nav_v2.py writes this same markup into the hand-written pages."""
     def cur(path):
         return ' aria-current="page"' if current == path else ""
-    lib_cls = ' class="nav-has-menu is-active"' if active == "library" else ' class="nav-has-menu"'
+    if active == "library":
+        active = "investigations"
+    inv_cls = ' class="nav-has-menu is-active"' if active == "investigations" else ' class="nav-has-menu"'
+    study_cls = ' class="nav-has-menu is-active"' if active == "study" else ' class="nav-has-menu"'
     return f'''<nav class="nav scrolled" id="nav" aria-label="Main">
   <div class="nav-inner">
     <a href="/" class="brand">
@@ -82,14 +86,19 @@ def nav_html(active="library", current=None):
     <ul class="nav-links" id="navLinks">
       <li><a href="/#about">The Practitioner</a></li>
       <li{' class="is-active"' if active == "offerings" else ""}><a href="/services/">Offerings</a></li>
-      <li{lib_cls}><a href="/occult-archives/"{cur("/occult-archives/")}>The Library</a>
+      <li{inv_cls}><a href="/occult-archives/"{cur("/occult-archives/")}>Investigations</a>
         <ul class="nav-submenu">
           <li><a href="/occult-archives/"{cur("/occult-archives/")}>The Occult Archives<span class="nav-sub-note">Chronicles &amp; Objects of Power</span></a></li>
           <li><a href="/new-jersey/">Hidden New Jersey<span class="nav-sub-note">Folklore of the towns I serve</span></a></li>
           <li><a href="/lectures/">Lectures<span class="nav-sub-note">The recorded corpus</span></a></li>
         </ul>
       </li>
-      <li><a href="/silver-temple/">The Silver Temple</a></li>
+      <li{study_cls}><a href="/solitary-study/"{cur("/solitary-study/")}>Study the Mysteries</a>
+        <ul class="nav-submenu">
+          <li><a href="/silver-temple/">The Silver Temple<span class="nav-sub-note">Directed esoteric study in a living mystery tradition</span></a></li>
+          <li><a href="/solitary-study/"{cur("/solitary-study/")}>The Solitary Study<span class="nav-sub-note">A recommended syllabus for learning the Western esoteric tradition through the writers themselves</span></a></li>
+        </ul>
+      </li>
       <li class="nav-mobile-only"><a href="/#contact">Inquire</a></li>
     </ul>
     <a href="/#begin" class="nav-cta">Begin a Consultation</a>
@@ -130,6 +139,7 @@ FOOTER = '''<footer>
           <li><a href="/new-jersey/">Hidden New Jersey</a></li>
           <li><a href="/lectures/">Lectures</a></li>
           <li><a href="/occult-archives/">The Occult Archives</a></li>
+          <li><a href="/solitary-study/">The Solitary Study</a></li>
         </ul>
       </div>
       <div>
@@ -160,7 +170,7 @@ FOOTER = '''<footer>
 </footer>'''
 
 
-def head(title, desc, path, og_image, og_type="website", jsonld=(), robots=None, preload=None, published=None, modified=None):
+def head(title, desc, path, og_image, og_type="website", jsonld=(), robots=None, preload=None, published=None, modified=None, css=None):
     url = SITE + path
     tags = [
         '<!DOCTYPE html>', '<html lang="en">', '<head>',
@@ -198,16 +208,17 @@ def head(title, desc, path, og_image, og_type="website", jsonld=(), robots=None,
     ]
     if preload:
         tags.append(f'<link rel="preload" as="image" href="{preload[0]}" imagesrcset="{preload[1]}" imagesizes="{preload[2]}" fetchpriority="high">')
-    tags += [f'<link rel="stylesheet" href="{c}">' for c in CSS]
+    tags += [f'<link rel="stylesheet" href="{c}">' for c in (css or CSS)]
     for block in jsonld:
         tags.append('<script type="application/ld+json">\n' + json.dumps(block, ensure_ascii=False, indent=1) + '\n</script>')
     tags.append('</head>')
     return "\n".join(tags)
 
 
-def page(headhtml, body, active="library", current=None):
+def page(headhtml, body, active="investigations", current=None, js=None):
+    scripts = "".join(f'<script src="{j}" defer></script>\n' for j in ([NAV_JS] + (js if js is not None else [JS])))
     return (headhtml + "\n<body>\n\n" + nav_html(active, current) + "\n\n<main id=\"main\">\n" + body +
-            "\n</main>\n\n" + FOOTER + '\n\n<script src="/assets/js/main.js"></script>\n<script src="' + JS + '" defer></script>\n</body>\n</html>\n')
+            "\n</main>\n\n" + FOOTER + '\n\n<script src="/assets/js/main.js"></script>\n' + scripts + '</body>\n</html>\n')
 
 
 def crumbs(items):
@@ -232,16 +243,16 @@ class Images:
 
     def srcset(self, key):
         im = self.reg[key]
-        return ", ".join(f"{IMG}{im['base']}-{w}.webp {w}w" for w in im["sizes"])
+        return ", ".join(f"{im.get('prefix', IMG)}{im['base']}-{w}.webp {w}w" for w in im["sizes"])
 
     def src(self, key, prefer=1280):
         im = self.reg[key]
         w = min(im["sizes"], key=lambda s: abs(s - prefer))
-        return f"{IMG}{im['base']}-{w}.webp"
+        return f"{im.get('prefix', IMG)}{im['base']}-{w}.webp"
 
     def og(self, key):
         im = self.reg.get(key) or {}
-        return IMG + im["og"] if im.get("og") else "/og-image.jpg"
+        return im.get("prefix", IMG) + im["og"] if im.get("og") else "/og-image.jpg"
 
     def img(self, key, sizes, eager=False, cls=""):
         im = self.reg[key]
@@ -413,6 +424,48 @@ def further_in_archives(item, chron, arts, imgs):
     return "\n".join(out)
 
 
+# ---------------------------------------------------------------- The Solitary Study cross-links
+STUDY_STAGES = {
+    "gate-of-light": ("I", "The Gate of Light"), "nature-of-reality": ("II", "The Nature of Reality"),
+    "science-of-correspondence": ("III", "The Science of Correspondence"), "hidden-virtues-of-nature": ("IV", "The Hidden Virtues of Nature"),
+    "tree-of-life": ("V", "The Tree of Life"), "mystery-of-regeneration": ("VI", "The Mystery of Regeneration"),
+    "sacred-art": ("VII", "The Sacred Art"), "language-of-the-mysteries": ("VIII", "The Language of the Mysteries"), "lost-word": ("IX", "The Lost Word"),
+}
+VIDEO_TITLES = {
+    "wMtWjgZMOsg": ("When Freemasonry Speaks of Lineage, What Does That Really Mean?", "/lectures/freemasonry-and-lineage/"),
+    "wx08eQEeRs4": ("The Lost Word: The Holy Grail, the Philosopher's Stone, and the Secret of Freemasonry", "/lectures/the-lost-word/"),
+    "WxWFyuKFz6Y": ("How Tarot Really Works: Psychic Ability, Intuition, Synchronicity, or Something More", "/lectures/how-tarot-really-works/"),
+    "c7vw_cleUo0": ("What Is Freemasonry? The Flame of the Craft in the Dawn of the Age of Aquarius", "/lectures/what-is-freemasonry/"),
+    "EgnI9hHyMPw": ("How I Read Tarot Using the Western Esoteric Tradition's Correspondences", "/lectures/how-i-read-tarot-correspondences/"),
+}
+
+
+def video_embed(vid):
+    if not vid or vid not in VIDEO_TITLES:
+        return ""
+    t, lec = VIDEO_TITLES[vid]
+    return (f'<section class="ga-related" aria-labelledby="from-the-lectures" style="padding-bottom:0"><h2 id="from-the-lectures">From the lectures</h2>'
+            f'<p class="ga-related-label">{e(t)}</p>'
+            f'<div style="position:relative;aspect-ratio:16/9;max-width:900px;margin:0 auto;border:1px solid rgba(201,169,110,0.3);background:#050709">'
+            f'<iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{e(t)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" '
+            f'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>'
+            f'<div class="ga-related-actions" style="margin-top:1.6rem"><a class="btn-secondary" href="{lec}">Lecture page and notes</a></div></section>')
+
+
+def studies_block(item):
+    st = [x for x in item.get("studies", []) if x.get("stage") in STUDY_STAGES]
+    if not st:
+        return ""
+    cards = "".join(
+        f'<a class="ga-rel" href="/solitary-study/{x["stage"]}/"><span class="ga-mono">The Solitary Study · Stage {STUDY_STAGES[x["stage"]][0]}</span>'
+        f'<strong>{e(STUDY_STAGES[x["stage"]][1])}</strong><span class="ga-desc">{e(x["why"])}</span></a>' for x in st)
+    return (f'<aside class="ga-related" aria-labelledby="behind-the-mystery" style="padding-bottom:0"><h2 id="behind-the-mystery">Behind the Mystery — Continue Your Studies</h2>'
+            f'<p class="ga-related-label">The tradition behind this {"investigation" if item.get("kind") == "artifact" else "story"}, in The Solitary Study</p>'
+            f'<div class="ga-related-grid" style="margin-bottom:1.5rem">{cards}</div>'
+            f'<p class="ga-related-label" style="text-transform:none;letter-spacing:0.02em;font-style:italic">The Solitary Study places the map in your hands. '
+            f'<a href="/silver-temple/" style="color:var(--gold-bright);border-bottom:1px solid rgba(201,169,110,0.4)">The Silver Temple</a> offers guidance along the road.</p></aside>')
+
+
 def toc(body):
     heads = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body)
     if len(heads) < 4:
@@ -469,6 +522,8 @@ def build_chronicle(c, chron, arts, imgs):
     </article>
   </div>
 </div>
+{video_embed(c.get("video"))}
+{studies_block(c)}
 {AUTHOR}
 {further_in_archives(c, chron, arts, imgs)}'''
     return page(h, body)
@@ -538,6 +593,8 @@ def build_dossier(a, chron, arts, imgs):
 {body_html}
 </article>
 {services}
+{video_embed(a.get("video"))}
+{studies_block(a)}
 {AUTHOR}
 {search_continues(a, chron, arts, imgs)}'''
     return page(h, body)
@@ -642,7 +699,7 @@ def build_landing(chron, arts, imgs):
     body = f'''<header class="ga-arch-hero">
   <div class="container">
     {crumbs(trail)}
-    <p class="ga-kicker">The Library of Greco Arcana</p>
+    <p class="ga-kicker">The Investigations of Greco Arcana</p>
     <h1>The Occult<br>Archives</h1>
     <div class="ga-rule" aria-hidden="true">{EMBLEM}</div>
     <p class="ga-tagline">Extraordinary stories. Documented history. Hidden traditions.</p>

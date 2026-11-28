@@ -1,0 +1,252 @@
+{
+ "seph": {
+  "1": [
+   "Kether",
+   "Crown",
+   "Eheieh",
+   "Metatron",
+   "Primum Mobile"
+  ],
+  "2": [
+   "Chokmah",
+   "Wisdom",
+   "Yah",
+   "Ratziel",
+   "The zodiac"
+  ],
+  "3": [
+   "Binah",
+   "Understanding",
+   "YHVH Elohim",
+   "Tzaphkiel",
+   "Saturn"
+  ],
+  "4": [
+   "Chesed",
+   "Mercy",
+   "El",
+   "Tzadkiel",
+   "Jupiter"
+  ],
+  "5": [
+   "Geburah",
+   "Severity",
+   "Elohim Gibor",
+   "Khamael",
+   "Mars"
+  ],
+  "6": [
+   "Tiphareth",
+   "Beauty",
+   "YHVH Eloah va-Daath",
+   "Raphael",
+   "Sun"
+  ],
+  "7": [
+   "Netzach",
+   "Victory",
+   "YHVH Tzabaoth",
+   "Haniel",
+   "Venus"
+  ],
+  "8": [
+   "Hod",
+   "Splendour",
+   "Elohim Tzabaoth",
+   "Michael",
+   "Mercury"
+  ],
+  "9": [
+   "Yesod",
+   "Foundation",
+   "Shaddai El Chai",
+   "Gabriel",
+   "Moon"
+  ],
+  "10": [
+   "Malkuth",
+   "Kingdom",
+   "Adonai ha-Aretz",
+   "Sandalphon",
+   "The elements"
+  ]
+ },
+ "paths": {
+  "11": [
+   1,
+   2,
+   "Aleph",
+   "א",
+   "Air",
+   "0 The Fool"
+  ],
+  "12": [
+   1,
+   3,
+   "Beth",
+   "ב",
+   "Mercury",
+   "I The Magician"
+  ],
+  "13": [
+   1,
+   6,
+   "Gimel",
+   "ג",
+   "Moon",
+   "II The High Priestess"
+  ],
+  "14": [
+   2,
+   3,
+   "Daleth",
+   "ד",
+   "Venus",
+   "III The Empress"
+  ],
+  "15": [
+   2,
+   6,
+   "Heh",
+   "ה",
+   "Aries",
+   "IV The Emperor"
+  ],
+  "16": [
+   2,
+   4,
+   "Vav",
+   "ו",
+   "Taurus",
+   "V The Hierophant"
+  ],
+  "17": [
+   3,
+   6,
+   "Zayin",
+   "ז",
+   "Gemini",
+   "VI The Lovers"
+  ],
+  "18": [
+   3,
+   5,
+   "Cheth",
+   "ח",
+   "Cancer",
+   "VII The Chariot"
+  ],
+  "19": [
+   4,
+   5,
+   "Teth",
+   "ט",
+   "Leo",
+   "VIII Strength"
+  ],
+  "20": [
+   4,
+   6,
+   "Yod",
+   "י",
+   "Virgo",
+   "IX The Hermit"
+  ],
+  "21": [
+   4,
+   7,
+   "Kaph",
+   "כ",
+   "Jupiter",
+   "X Wheel of Fortune"
+  ],
+  "22": [
+   5,
+   6,
+   "Lamed",
+   "ל",
+   "Libra",
+   "XI Justice"
+  ],
+  "23": [
+   5,
+   8,
+   "Mem",
+   "מ",
+   "Water",
+   "XII The Hanged Man"
+  ],
+  "24": [
+   6,
+   7,
+   "Nun",
+   "נ",
+   "Scorpio",
+   "XIII Death"
+  ],
+  "25": [
+   6,
+   9,
+   "Samekh",
+   "ס",
+   "Sagittarius",
+   "XIV Temperance"
+  ],
+  "26": [
+   6,
+   8,
+   "Ayin",
+   "ע",
+   "Capricorn",
+   "XV The Devil"
+  ],
+  "27": [
+   7,
+   8,
+   "Peh",
+   "פ",
+   "Mars",
+   "XVI The Tower"
+  ],
+  "28": [
+   7,
+   9,
+   "Tzaddi",
+   "צ",
+   "Aquarius",
+   "XVII The Star"
+  ],
+  "29": [
+   7,
+   10,
+   "Qoph",
+   "ק",
+   "Pisces",
+   "XVIII The Moon"
+  ],
+  "30": [
+   8,
+   9,
+   "Resh",
+   "ר",
+   "Sun",
+   "XIX The Sun"
+  ],
+  "31": [
+   8,
+   10,
+   "Shin",
+   "ש",
+   "Fire (and Spirit)",
+   "XX Judgement"
+  ],
+  "32": [
+   9,
+   10,
+   "Tav",
+   "ת",
+   "Saturn (and Earth)",
+   "XXI The World"
+  ]
+ }
+}
